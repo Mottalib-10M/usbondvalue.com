@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://us-savings-bonds.example/sitemap-index.xml
+Sitemap: https://usbondvalue.com/sitemap-index.xml

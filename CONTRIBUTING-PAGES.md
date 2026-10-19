@@ -1,4 +1,4 @@
-# Écrire ou étoffer une page de BondWorth (us-savings-bonds)
+# Écrire ou étoffer une page de US Bond Value (us-savings-bonds)
 
 Notice pour les agents qui écrivent les pages. À lire en entier avant d'écrire, avec
 `~/Documents/GitHub/RECETTE-SITE.md` (§0, §5, §6, §6.5, §7, §9.3, §11, §17.4, §21, §26).
@@ -7,7 +7,7 @@ Notice pour les agents qui écrivent les pages. À lire en entier avant d'écrir
 notes), taux composite de chaque I bond selon son mois d'émission, prochain taux du 1er novembre 2026, Treasury bills
 (4, 6, 8, 13, 17, 26, 52 semaines) et leur équivalent imposable par État, impôt fédéral sur les intérêts, exclusion pour
 études (Form 8815), bonds hérités. **Anglais américain seul**, sous `/en/`. Éditeur : la société **Radif Partners**
-(jamais un nom de personne). Nom provisoire : « BondWorth ».
+(jamais un nom de personne). Nom provisoire : « US Bond Value ».
 
 **L'angle (phrase de valeur ajoutée)** : le calculateur du Trésor ne traite que les bonds papier, un par un, et s'arrête à la
 période en cours ; les articles qui classent sur « i bond rates » datent de 2022 à 2024 ; les pages T-bill font saisir son

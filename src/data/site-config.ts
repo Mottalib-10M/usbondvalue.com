@@ -1,6 +1,6 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-savings-bonds.example";
-export const SITE_NAMES: Record<string, string> = {"en": "BondWorth"};
+export const SITE_URL = "https://usbondvalue.com";
+export const SITE_NAMES: Record<string, string> = {"en": "US Bond Value"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US"};
 export const LOCALE_TAG = 'en-US';
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners rebuil
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["Series EE savings bond redemption values", "Series I savings bond composite rates", "Three-month interest penalty on savings bonds", "Treasury bill discount and investment rates", "State tax exemption of Treasury interest", "Education savings bond program (Form 8815)"]};
-export const CONTACT_EMAIL = "contact@us-savings-bonds.example";
+export const CONTACT_EMAIL = "contact@usbondvalue.com";
 export const THEME_COLOR = '#1E4D6B';
 export const LOGO_SYMBOL = 'SB';
 export const BING_VERIFY_CODE = '';

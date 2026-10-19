@@ -8,13 +8,13 @@ import { KIT as K } from '../../lib/kit';
 import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
 const lang = 'en';
 const path = route('about', lang);
-const title = 'BondWorth in 2026: who builds these savings bond tools';
-const description = 'BondWorth is published by Radif Partners: savings bond and Treasury bill calculators built on the Treasury rules, with no e-mail asked and no bank behind.';
+const title = 'Savings bond calculators 2026: who builds US Bond Value';
+const description = 'US Bond Value is published by Radif Partners: savings bond and Treasury bill calculators built on the Treasury rules, with no e-mail asked and no bank behind.';
 const C = K.P.checks;
 ---
 <PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path }])]} breadcrumbs={[{ label: 'About' }]}>
   <article class="prose prose-slate max-w-none prose-headings:font-serif">
-    <h1>About BondWorth</h1>
+    <h1>About US Bond Value</h1>
     <p>{AUTHOR_DESC.en}</p>
     <h2>The gap this site fills</h2>
     <p>Many savings bonds still sit in drawers as paper bonds from a grandparent or a payroll plan, while every new bond is electronic: EE bonds since 2012, I bonds since January 1, 2025. The Treasury's own calculator values paper bonds only, one at a time, and stops at the end of the current rate period. Electronic bonds can be valued only by logging into the account that holds them, which an heir or a tax preparer often cannot do. News articles about I bond rates stay in search results for years after their rate has expired, and Treasury bill pages leave you to guess your state tax rate.</p>

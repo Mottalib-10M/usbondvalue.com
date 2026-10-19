@@ -1,4 +1,4 @@
-# Données de BondWorth (us-savings-bonds) : d'où elles viennent, comment les refaire
+# Données de US Bond Value (us-savings-bonds) : d'où elles viennent, comment les refaire
 
 Toutes les valeurs affichées sortent de quatre fichiers de `src/data/`, chacun refait par un script
 rejouable. Rien n'est saisi à la main dans le code ni dans les pages (`CONTRIBUTING-PAGES.md`).
