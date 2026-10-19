@@ -946,6 +946,24 @@
      1500000,
      0.0915
     ]
+   ],
+   "head": [
+    [
+     0,
+     0.058
+    ],
+    [
+     41100,
+     0.0675
+    ],
+    [
+     97300,
+     0.0715
+    ],
+    [
+     1500000,
+     0.0915
+    ]
    ]
   },
   "surtax": "New for tax years beginning on or after Jan. 1, 2026: a 2% surcharge on Maine taxable income above $1,000,000 (single), $1,500,000 (married filing jointly or head of household) or $750,000 (married filing separately). The top marginal rate therefore becomes 9.15%. Thresholds are indexed from 2027.",
@@ -954,7 +972,7 @@
   "sourceUrl": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2026-05/ind_tax_rate_sched_2026_rev.pdf",
   "sourceTitle": "State of Maine 2026 Individual Income Tax Rates (Maine Revenue Services, revised May 20, 2026)",
   "retrieved": "2026-10-19",
-  "note": "Head of household: 5.8% under $41,100, 6.75% to $97,300, 7.15% above. The schedule shows the upper-bracket starting points as 'less than X' and 'X or more'; they are entered here as rate-start thresholds. No local income tax."
+  "note": "Re-read 2026-10-19 with a browser user agent (Maine Revenue Services PDF, revised May 20, 2026): single 5.8% under $27,400, 6.75% to $64,850, 7.15% above; joint $54,850 / $129,750; head of household $41,100 / $97,300. 2% surcharge above $1,000,000 single, $1,500,000 joint or head of household, from 2026. No local income tax."
  },
  "maryland": {
   "slug": "maryland",
@@ -1163,17 +1181,12 @@
    ]
   },
   "surtax": null,
-  "local": "24 cities levy an income tax: Detroit, Albion, Battle Creek, Benton Harbor, Big Rapids, East Lansing, Grand Rapids, Flint, Grayling, Hamtramck, Highland Park, Hudson, Ionia, Jackson, Lansing, Lapeer, Muskegon, Muskegon Heights, Pontiac, Port Huron, Portland, Saginaw, Springfield and Walker. Residents are taxed on all income, including interest, under the uniform city income tax ordinance. Nonresidents pay half the rate on city-source earnings only. Detroit's resident rate is 2.4% (nonresident 1.2%). Most other cities charge residents 1%, and a few charge more.",
+  "local": "24 cities levy an income tax (Michigan Department of Treasury list, read from its Internet Archive capture of April 11, 2026): Detroit, Albion, Battle Creek, Benton Harbor, Big Rapids, East Lansing, Grand Rapids, Flint, Grayling, Hamtramck, Highland Park, Hudson, Ionia, Jackson, Lansing, Lapeer, Muskegon, Muskegon Heights, Pontiac, Port Huron, Portland, Saginaw, Springfield and Walker. Detroit's resident rate is 2.4%. Rates of the other cities differ from city to city and were not re-read: check the city's own return.",
   "usInterest": "Subtracted on Schedule 1, line 10 'income from U.S. government obligations' (net of related expenses), carried to MI-1040 line 13 (2025 Schedule 1 instructions). City income taxes also cannot tax U.S. obligation interest (31 U.S.C. 3124).",
   "sourceUrl": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year",
   "sourceTitle": "4.25% Income Tax Rate for Individuals and Fiduciaries in 2026 Tax Year (Michigan Department of Treasury, April 15, 2026)",
   "retrieved": "2026-10-19",
-  "note": "The rate-cut formula was not triggered (FY2025 GF/GP revenue -1.56% against 2.70% inflation), so the 2026 rate is 4.25%. City list is from michigan.gov/taxes/citytax/what-cities-impose-an-income-tax. Detroit's 2.4% was read on detroitmi.gov. The 1% standard rate for other cities and 'resident interest is taxable' come from the City Income Tax Act as I know it; I could not open the statute (legislature.mi.gov blocked), so the min/typical figures are not verified. HB 6225 (2026, roll back to 3.9%) is only introduced.",
-  "localRange": {
-   "min": 0.01,
-   "max": 0.024,
-   "typical": 0.01
-  }
+  "note": "State rate 4.25% for 2026 (Treasury notice of April 15, 2026: the rate-cut formula was not triggered). City list re-read 2026-10-19 from the Treasury page capture; city sites and legislature.mi.gov answer 403 or 404 to scripts, so only Detroit's 2.4% (detroitmi.gov) is stated; no min/typical city rate is published here."
  },
  "minnesota": {
   "slug": "minnesota",
@@ -1348,7 +1361,7 @@
   "sourceUrl": "https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf",
   "sourceTitle": "2026 Missouri Withholding Tax Formula (Missouri Department of Revenue)",
   "retrieved": "2026-10-19",
-  "note": "dor.mo.gov blocks this network (Imperva 'Error 16', also in Chrome). The official PDF was read from its Internet Archive copy captured 2026-10-13 (web.archive.org/web/20261013030900id_/...). Annual 2026 table: 0% to $1,348, then 2.0/2.5/3.0/3.5/4.0/4.5% per $1,348 band, and 4.7% above $9,436. Missouri brackets are the same for all filing statuses. Indexing and the top-rate cuts are in RSMo 143.011 (read on revisor.mo.gov). This is the withholding formula; the 2026 MO-1040 tax table should match, but I could not open it."
+  "note": "Re-read 2026-10-19: dor.mo.gov still answers 403; the official PDF '2026 Missouri Withholding Tax Formula' was read from its Internet Archive capture of 2026-10-13 (https://web.archive.org/web/20261013030900id_/https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf). Annual table: 0% to $1,348, then 2.0/2.5/3.0/3.5/4.0/4.5% per $1,348 band and 4.7% above $9,436, the same for all filing statuses. It is the withholding formula; Missouri's withholding brackets follow the annual income tax rate table of RSMo 143.011."
  },
  "montana": {
   "slug": "montana",
@@ -1446,10 +1459,10 @@
   "surtax": null,
   "local": null,
   "usInterest": "Not applicable (no personal income tax).",
-  "sourceUrl": "https://www.leg.state.nv.us/const/nvconst.html",
-  "sourceTitle": "Constitution of the State of Nevada, Art. 10, Sec. 1 (ban on income tax on the wages or personal income of natural persons)",
+  "sourceUrl": "https://www.leg.state.nv.us/Const/NvConst.html",
+  "sourceTitle": "Constitution of the State of Nevada, Article 10, Section 1(9) (Nevada Legislature)",
   "retrieved": "2026-10-19",
-  "note": "NOT READ: the legislature site blocked both curl and Chrome (Cloudflare), and the Nevada Department of Taxation pages fetched (tax.nv.gov, /faqs/, /tax-types/) say nothing explicit about personal income tax. No personal income tax is well established, but no official page was actually read in this run."
+  "note": "Re-read 2026-10-19: the Legislature site answers 403 (Cloudflare); its Constitution page was read from the Internet Archive capture of 2025 (https://web.archive.org/web/2025id_/https://www.leg.state.nv.us/Const/NvConst.html). Art. 10, Sec. 1(9): 'No income tax shall be levied upon the wages or personal income of natural persons.'"
  },
  "new-hampshire": {
   "slug": "new-hampshire",
@@ -1875,7 +1888,7 @@
   "slug": "ohio",
   "code": "OH",
   "name": "Ohio",
-  "year": 2025,
+  "year": 2026,
   "hasIncomeTax": true,
   "taxesInterest": true,
   "brackets": {
@@ -1887,10 +1900,6 @@
     [
      26050,
      0.0275
-    ],
-    [
-     100000,
-     0.03125
     ]
    ],
    "joint": [
@@ -1901,20 +1910,16 @@
     [
      26050,
      0.0275
-    ],
-    [
-     100000,
-     0.03125
     ]
    ]
   },
   "surtax": null,
   "local": "Municipal income taxes (R.C. ch. 718) apply to earned income and net profits, not to intangible income such as interest; no official page was read this run (ODT/legislature sites at 199.218.x were unreachable). School district income tax: the official 2025 IT 1040/SD 100 booklet says traditional-base districts tax MAGI less exemptions, which includes interest. Earned-income-base districts exclude interest. MAGI starts from Ohio AGI, so U.S. obligation interest deducted on the Ohio Schedule of Adjustments is outside both bases. Rates vary by district (district list in the booklet).",
   "usInterest": "Deducted on the Ohio Schedule of Adjustments, line 26 'Federal Interest and Dividends Exempt From State Taxation' (Treasury notes, bills and bonds named) - 2025 IT 1040 booklet.",
-  "sourceUrl": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf",
-  "sourceTitle": "2025 Ohio IT 1040 / SD 100 Instructions - 2025 Ohio Income Tax Brackets",
+  "sourceUrl": "https://codes.ohio.gov/ohio-revised-code/section-5747.02",
+  "sourceTitle": "Ohio Revised Code 5747.02(A)(3)(c), as amended by H.B. 96 (136th General Assembly), effective September 30, 2025",
   "retrieved": "2026-10-19",
-  "note": "UNCERTAIN FOR 2026. Brackets are the same for all filing statuses. Tax above $26,050 is $342 + 2.75% of the excess (a step at the threshold), and business income is taxed at a flat 3%. H.B. 96 (signed 2025-06-30) is widely reported, though not confirmed here from an official text, to make 2026 a flat 2.75% above $26,050 (dropping the 3.125% bracket). Against that, the official '2026 Ohio Estimated Income Tax Payment Worksheet' (PDF modified 2026-05-04; https://dam.assets.ohio.gov/image/upload/v1735926006/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) still shows the 2025 brackets with 3.125% above $100,000. ODT's percentage-method withholding table effective 2026-08-01 (top withholding rate cut from 3.64% to 3.40%) supports a 2026 cut. codes.ohio.gov (R.C. 5747.02) and legislature.ohio.gov were unreachable, so the 2025 official schedule is given. If H.B. 96 is confirmed, 2026 = [[0,0],[26050,0.0275]].",
+  "note": "Confirmed 2026-10-19 on the official Revised Code (codes.ohio.gov, read from its Internet Archive capture of 2026-08-04; the live site is unreachable from scripts): 'For taxable years beginning in 2026 and thereafter, $332.00 plus 2.75% of the amount in excess of $26,050' on nonbusiness income, nothing below $26,050. The 3.125% bracket ended with 2025. Same schedule for all filing statuses; business income taxed at 3%. The tax.ohio.gov rate page still lists years through 2025 only.",
   "extraSources": [
    {
     "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf",
@@ -2210,13 +2215,13 @@
     ]
    ]
   },
-  "surtax": "None for 2026. HB 7127 Sub A (FY2027 budget, Art. 6) adds a High-Income Surtax on income over $1,000,000 (indexed, same threshold for all filing statuses): 1% for TY2027, 2% for TY2028, 3% from TY2029 (source: RI Division of Taxation, 2026 Summary of Legislative Changes, https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-07/2026_summary_of_legislative_changes.pdf).",
+  "surtax": "From tax year 2027 (not 2026): 1% surtax on income above $1,000,000 (indexed), 2% in 2028, 3% from 2029 (H 7127 Sub A, FY2027 budget).",
   "local": "None (no municipal income tax in Rhode Island).",
   "usInterest": "Subtracted on RI Schedule M, line 1a: 'Income from obligations of the US government included in Federal AGI but exempt from state income taxes', reduced by related investment interest taken as a federal itemized deduction (2025 RI Schedule M).",
   "sourceUrl": "https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf",
   "sourceTitle": "RI Division of Taxation ADV 2025-22, Inflation-adjusted amounts set for Tax Year 2026 (Nov 3, 2025) - Uniform tax rate schedule for Tax Year 2026",
   "retrieved": "2026-10-19",
-  "note": "Single uniform schedule used by all filing statuses (joint = single). 2026 standard deduction $11,200 single / $22,400 MFJ; exemption $5,250; deductions/exemptions phase out between $261,000 and $290,800 of modified federal AGI. tax.ri.gov sits behind Cloudflare, so it was read in a real browser."
+  "note": "Re-read 2026-10-19 from Internet Archive captures (tax.ri.gov answers 403 to scripts): ADV 2025-22 (capture 2026-02-26) gives the Tax Year 2026 uniform schedule used by all filers: 3.75% to $82,050, 4.75% to $186,450, 5.99% above. The 2026 Summary of Legislative Changes (July 22, 2026; capture 2026-09-02) adds a 1% high-income surtax above $1 million only from tax year 2027 (2% in 2028, 3% from 2029): nothing new for 2026. 2026 standard deduction $11,200 single / $22,400 joint."
  },
  "south-carolina": {
   "slug": "south-carolina",
@@ -2288,10 +2293,10 @@
   "surtax": null,
   "local": "None (the Hall tax was the only tax on interest and dividends; localities have no income tax).",
   "usInterest": "Not applicable. The Hall income tax on interest and dividends was repealed for tax years beginning on or after January 1, 2021.",
-  "sourceUrl": "https://revenue.support.tn.gov/hc/en-us/articles/360057828631-HIT-3-Hall-Income-Tax-Repealed-Beginning-January-1-2021",
-  "sourceTitle": "Tennessee Department of Revenue, HIT-3 - Hall Income Tax Repealed Beginning January 1, 2021",
+  "sourceUrl": "https://www.tn.gov/revenue/taxes/hall-income-tax.html",
+  "sourceTitle": "Tennessee Department of Revenue, Hall Income Tax",
   "retrieved": "2026-10-19",
-  "note": "Official TN DOR help-desk article: 'The tax is fully repealed beginning January 1, 2021' (phased down 4% / 3% / 2% / 1% for 2017-2020). www.tn.gov returned 403 from this location, so the tn.gov Hall tax page itself could not be read."
+  "note": "Re-read 2026-10-19: tn.gov is unreachable from scripts; the Department of Revenue Hall Income Tax page was read from its Internet Archive capture of 2026: 'The Hall Income tax was repealed for tax periods that begin on January 1, 2021, or later.'"
  },
  "texas": {
   "slug": "texas",
@@ -2597,6 +2602,12 @@
   "sourceUrl": "https://wyoleg.gov/InterimCommittee/2025/03-202506032-01WyomingtaxstructureratesandcollectionsJune32025.pdf",
   "sourceTitle": "Wyoming Legislature, LSO Legal & Budget/Fiscal Divisions, 'Wyoming Tax Structure, Rates and Collections' (June 3, 2025)",
   "retrieved": "2026-10-19",
-  "note": "The LSO table lists 'Individual Income Tax 0% (Note Art. 15, Sec. 18)' with $0 FY24 collections. Wyoming Constitution Art. 15 Sec. 18 requires any income tax to credit sales, use and ad valorem taxes. No revenue.wyo.gov page stating this could be read (the site's home page has no income-tax text). The source is dated 2025, and no 2026 income tax law is known."
+  "note": "Re-checked 2026-10-19. No Wyoming Department of Revenue page says it in words (revenue.wyo.gov and the Excise Tax Division pages have no income-tax text). The Wyoming Constitution published by the Secretary of State (amendments through November 18, 2024; https://sos.wyo.gov/Forms/Publications/WYConstitution.pdf) has no income tax and, in Art. 15 Sec. 18, requires any future income tax to credit sales, use and property taxes. The Legislative Service Office table (June 3, 2025) lists 'Individual Income Tax 0%' with no collections. No 2026 income tax law is known.",
+  "extraSources": [
+   {
+    "url": "https://sos.wyo.gov/Forms/Publications/WYConstitution.pdf",
+    "title": "Constitution of the State of Wyoming, Art. 15 Sec. 18 (Wyoming Secretary of State)"
+   }
+  ]
  }
 }

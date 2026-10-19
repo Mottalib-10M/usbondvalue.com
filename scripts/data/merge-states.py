@@ -50,6 +50,7 @@ for r in rows:
     br = r['brackets'] or {}
     single = [list(x) for x in br.get('single', [])]
     joint = [list(x) for x in br.get('joint', [])]
+    head = [list(x) for x in br['head']] if br.get('head') else None
     code = r['code']
     surt = SURTAX.get(code, 'skip')
     if code == 'MA':
@@ -61,10 +62,11 @@ for r in rows:
         ts, tj, extra = surt
         single = add_surtax(single, ts, extra)
         joint = add_surtax(joint, tj, extra)
+        if head: head = add_surtax(head, tj, extra)  # Maine: head of household shares the joint surcharge threshold
     row = {
         'slug': s, 'code': code, 'name': r['name'], 'year': r['year'],
         'hasIncomeTax': r['hasIncomeTax'], 'taxesInterest': r['taxesInterest'],
-        'brackets': {'single': single, 'joint': joint, **({'head': br['head']} if br.get('head') else {'head': joint} if code in HEAD_IS_JOINT else {})},
+        'brackets': {'single': single, 'joint': joint, **({'head': head} if head else {'head': joint} if code in HEAD_IS_JOINT else {})},
         'surtax': r.get('surtax') or None, 'local': r.get('local') or None,
         'usInterest': r.get('usInterest') or None,
         'sourceUrl': r['sourceUrl'], 'sourceTitle': r['sourceTitle'], 'retrieved': r['retrieved'],

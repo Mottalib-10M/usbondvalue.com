@@ -37,7 +37,7 @@ Les descriptions de pages contiennent des taux calculés : `check-snippets` bloq
 
 ## Barèmes d'État
 
-Californie, Idaho, Ohio et Vermont utilisent le barème 2025 (le 2026 n'était pas publié le 19 octobre 2026).
+Californie, Idaho et Vermont utilisent le barème 2025 (le 2026 n'était pas publié le 19 octobre 2026 ; l'Ohio est passé au barème 2026 de la R.C. 5747.02, taux unique de 2,75 % au-dessus de 26 050 $).
 Quand il paraît : corriger la ligne dans `research/states/*.json` (barème, `year`, `sourceUrl`, `retrieved`),
 relancer `merge-states.py`. Non modélisés (signalés dans les pages) : recapture de New York, NIIT du Minnesota,
 pertes de tranches du Connecticut, crédits.

@@ -322,7 +322,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
       { id: 'y', label: 'T-bill or savings bond yield', def: Number(arg?.y ?? LATEST['26-Week'].investment), unit: '%', max: 20, decimals: 3, help: `Latest 26-week auction: ${formatDecimal(LATEST['26-Week'].investment, 3)} %` },
       { kind: 'choice', id: 'nyc', label: 'New York City resident', def: String(arg?.nyc ?? 'no'), options: [{ value: 'no', label: 'No' }, { value: 'yes', label: 'Yes' }], showIf: { id: 'sx', is: 'new-york' } },
       { kind: 'select', id: 'pdx', label: 'Portland-area local tax', def: String(arg?.pdx ?? 'none'), options: [{ value: 'none', label: 'None' }, ...(STATES.oregon?.locals ?? []).map((l) => ({ value: l.id, label: l.label }))], showIf: { id: 'sx', is: 'oregon' } },
-      { id: 'loc', label: 'Local income tax on interest', def: Number(arg?.loc ?? 0), unit: '%', max: 10, decimals: 2, adv: true, wide: true, help: 'County or city tax that reaches interest (Maryland counties, some Michigan, Ohio and Indiana localities)' },
+      { id: 'loc', label: 'Local income tax on interest', def: Number(arg?.loc ?? 0), unit: '%', max: 10, decimals: 2, adv: true, wide: true, help: 'County, city or school district tax that reaches interest (Maryland and Indiana counties, Michigan cities, some Ohio school districts)' },
       { kind: 'choice', id: 'it', label: 'You deduct state tax on Schedule A', def: 'no', options: [{ value: 'no', label: 'No' }, { value: 'yes', label: 'Yes' }], adv: true, help: 'Only if you itemize and stay under the SALT cap' },
     ],
     run: (v) => {
