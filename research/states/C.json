@@ -1,0 +1,724 @@
+[
+ {
+  "code": "MT",
+  "name": "Montana",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.047
+    ],
+    [
+     47500,
+     0.0565
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.047
+    ],
+    [
+     95000,
+     0.0565
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Subtracted on Montana Form 2, Schedule I (Montana adjustments to federal taxable income), 'Interest and mutual fund dividends from federal bonds, notes, and obligations' (line 9 of the Subtractions section in the 2025 Form 2 instructions); T-bills are listed explicitly.",
+  "sourceUrl": "https://revenue.mt.gov/news/recent-news/2026-withholding-updates",
+  "sourceTitle": "Montana Department of Revenue - 2026 Withholding Updates (HB 337, 2025 session)",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "Official DOR notice: from 2026-01-01 top rate falls from 5.9% to 5.65%; 4.7% applies up to $95,000 joint, $71,250 head of household, $47,500 all other statuses. Brackets apply to Montana taxable income (federal taxable income based since 2024); net long-term capital gains have separate lower rates (3.0%/4.1% in 2025), irrelevant for T-bill interest. The DOR 2025 rate page shows 2025 = 4.7% to $21,100 / $42,200, then 5.9%. No 2026 Form 2 rate page published yet; notice says changes appear on the 2026 Form 2 filed in 2027."
+ },
+ {
+  "code": "NE",
+  "name": "Nebraska",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0246
+    ],
+    [
+     4130,
+     0.0351
+    ],
+    [
+     24760,
+     0.0455
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0246
+    ],
+    [
+     8250,
+     0.0351
+    ],
+    [
+     49530,
+     0.0455
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Deducted on Form 1040N Schedule I, line 15 'U.S. Government Obligations Exempt for State Purposes' (line 16 for RIC/mutual-fund dividends from U.S. obligations) - 2025 booklet.",
+  "sourceUrl": "https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_1040N-ES.pdf",
+  "sourceTitle": "Nebraska Form 1040N-ES 2026 - 2026 Nebraska Estimated Income Tax Rate Schedule",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "The official schedule lists four brackets but the 3rd and 4th are both 4.55% for 2026 (Neb. Rev. Stat. 77-2715.03(2)(c)(v)), so they are merged here (4th bracket starts at $39,900 single / $79,800 joint). Same numbers in the DOR draft 2026 Tax Calculation Schedule (https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/drafts/2026_tax_calculation_schedule.pdf, 'DRAFT AS OF 8/17/2026'). The ES schedule says it is for estimated tax only. Personal exemption is a credit ($176 per exemption in 2026), not a deduction."
+ },
+ {
+  "code": "NV",
+  "name": "Nevada",
+  "year": 2026,
+  "hasIncomeTax": false,
+  "taxesInterest": false,
+  "brackets": {
+   "single": [],
+   "joint": []
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Not applicable (no personal income tax).",
+  "sourceUrl": "https://www.leg.state.nv.us/const/nvconst.html",
+  "sourceTitle": "Constitution of the State of Nevada, Art. 10, Sec. 1 (ban on income tax on the wages or personal income of natural persons)",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "NOT READ: the legislature site blocked both curl and Chrome (Cloudflare), and the Nevada Department of Taxation pages fetched (tax.nv.gov, /faqs/, /tax-types/) say nothing explicit about personal income tax. No personal income tax is well established, but no official page was actually read in this run."
+ },
+ {
+  "code": "NH",
+  "name": "New Hampshire",
+  "year": 2026,
+  "hasIncomeTax": false,
+  "taxesInterest": false,
+  "brackets": {
+   "single": [],
+   "joint": []
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Not applicable for 2026 (Interest and Dividends Tax repealed).",
+  "sourceUrl": "https://www.revenue.nh.gov/taxes-glance/interest-dividends-tax",
+  "sourceTitle": "Interest & Dividends Tax | NH Department of Revenue Administration",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "Official DRA page: the I&D Tax was 5% (periods ending before 12/31/2023), 4% (ending on/after 12/31/2023), 3% (ending on/after 12/31/2024), and is repealed for taxable periods beginning after December 31, 2024 (TIR 2025-001). So it does not apply in 2026. No tax on wages. Page read via Chrome (curl got 403)."
+ },
+ {
+  "code": "NJ",
+  "name": "New Jersey",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.014
+    ],
+    [
+     20000,
+     0.0175
+    ],
+    [
+     35000,
+     0.035
+    ],
+    [
+     40000,
+     0.05525
+    ],
+    [
+     75000,
+     0.0637
+    ],
+    [
+     500000,
+     0.0897
+    ],
+    [
+     1000000,
+     0.1075
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.014
+    ],
+    [
+     20000,
+     0.0175
+    ],
+    [
+     50000,
+     0.0245
+    ],
+    [
+     70000,
+     0.035
+    ],
+    [
+     80000,
+     0.05525
+    ],
+    [
+     150000,
+     0.0637
+    ],
+    [
+     500000,
+     0.0897
+    ],
+    [
+     1000000,
+     0.1075
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "No local income tax reaches interest. (Newark payroll tax is on employers.)",
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Interest on U.S. obligations is exempt from NJ Gross Income Tax; leave it out of taxable interest on NJ-1040 and report it as tax-exempt interest (it is not a subtraction line).",
+  "sourceUrl": "https://www.nj.gov/treasury/taxation/pdf/current/njtaxratesch.pdf",
+  "sourceTitle": "New Jersey Tax Rate Schedules (linked as '2020 and After' on the Division of Taxation 'NJ Income Tax Rates' page)",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "Rates are fixed in statute, not indexed. The Division's NJ Income Tax Rates page (https://www.nj.gov/treasury/taxation/taxtables.shtml, last updated 09/28/26) labels this schedule '2020 and After', so it covers 2026. Joint schedule also applies to head of household and qualifying widow(er). The 2026 NJ-1040-ES contains only vouchers, no rate schedule. The NJ treatment of US-obligation interest is not taken from a document read in this run."
+ },
+ {
+  "code": "NM",
+  "name": "New Mexico",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.015
+    ],
+    [
+     5500,
+     0.032
+    ],
+    [
+     16500,
+     0.043
+    ],
+    [
+     33500,
+     0.047
+    ],
+    [
+     66500,
+     0.049
+    ],
+    [
+     210000,
+     0.059
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.015
+    ],
+    [
+     8000,
+     0.032
+    ],
+    [
+     25000,
+     0.043
+    ],
+    [
+     50000,
+     0.047
+    ],
+    [
+     100000,
+     0.049
+    ],
+    [
+     315000,
+     0.059
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Deducted on Schedule PIT-ADJ, line 9 'Interest received on U.S. government obligations' (Treasury bills named explicitly) - 2025 PIT-ADJ instructions (https://realfile.tax.newmexico.gov/2025pit-adj-ins.pdf).",
+  "sourceUrl": "https://realfile.tax.newmexico.gov/FYI-104.pdf",
+  "sourceTitle": "FYI-104 New Mexico Withholding Tax, Effective January 1, 2026 (Rev. 11/2025), Table 7 Annual",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "Taxable-income thresholds DERIVED from the official 2026 annual withholding table by subtracting its zero-bracket amount (single $8,050, married $16,100 = 2026 standard deduction). Results: single 1.5/3.2/4.3/4.7/4.9/5.9% starting at 0/5,500/16,500/33,500/66,500/210,000; joint at 0/8,000/25,000/50,000/100,000/315,000. These match the fixed (non-indexed) NMSA 7-2-7 schedule for tax years from 2025 (HB 252, 2024). The tax.newmexico.gov rate page is empty and the legislature PDF returned 403. Married filing separately and head of household have their own schedules (HOH uses the joint thresholds in the withholding table)."
+ },
+ {
+  "code": "NY",
+  "name": "New York",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.039
+    ],
+    [
+     8500,
+     0.044
+    ],
+    [
+     11700,
+     0.0515
+    ],
+    [
+     13900,
+     0.054
+    ],
+    [
+     80650,
+     0.059
+    ],
+    [
+     215400,
+     0.0685
+    ],
+    [
+     1077550,
+     0.0965
+    ],
+    [
+     5000000,
+     0.103
+    ],
+    [
+     25000000,
+     0.109
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.039
+    ],
+    [
+     17150,
+     0.044
+    ],
+    [
+     23600,
+     0.0515
+    ],
+    [
+     27900,
+     0.054
+    ],
+    [
+     161550,
+     0.059
+    ],
+    [
+     323200,
+     0.0685
+    ],
+    [
+     2155350,
+     0.0965
+    ],
+    [
+     5000000,
+     0.103
+    ],
+    [
+     25000000,
+     0.109
+    ]
+   ]
+  },
+  "surtax": "Recapture of lower-bracket benefit (tax computation worksheets) once NYAGI exceeds $107,650: phased in over the next $50,000 (and further worksheets at higher NYAGI). Above $25M NYAGI, all taxable income is taxed at 10.9%. MCTMT applies only to self-employment earnings, not interest.",
+  "local": "NYC resident personal income tax on NYC taxable income (built on NY AGI, so U.S. obligation interest is excluded too). Yonkers resident surcharge = 16.75% of net NY State tax (IT-2105-I 2026 line 22a), so it follows the state base. Yonkers nonresident earnings tax covers earnings only.",
+  "localBrackets": {
+   "NYC": {
+    "single": [
+     [
+      0,
+      0.03078
+     ],
+     [
+      12000,
+      0.03762
+     ],
+     [
+      25000,
+      0.03819
+     ],
+     [
+      50000,
+      0.03876
+     ]
+    ],
+    "joint": [
+     [
+      0,
+      0.03078
+     ],
+     [
+      21600,
+      0.03762
+     ],
+     [
+      45000,
+      0.03819
+     ],
+     [
+      90000,
+      0.03876
+     ]
+    ]
+   }
+  },
+  "localRate": {
+   "Yonkers_resident_surcharge_of_state_tax": 0.1675
+  },
+  "usInterest": "Subtracted on Form IT-201, line 28 'Interest income on U.S. government bonds' (2025 IT-201-I); the NYC and Yonkers taxes follow.",
+  "sourceUrl": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+  "sourceTitle": "IT-2105-I (2026) Instructions for Form IT-2105, Estimated Income Tax Payment Voucher for Individuals - New York State and New York City tax rates, page 10",
+  "localSourceUrl": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+  "retrieved": "2026-10-19",
+  "note": "2026 rates include the Chapter 59 of the Laws of 2025 (Part A) cuts for the first five brackets (4.0->3.9, 4.5->4.4, 5.25->5.15, 5.5->5.4, 6.0->5.9), confirmed by NYS-50-T-NYS (1/26). The marginal rates here ignore the recapture worksheets: for NYAGI above $107,650 the effective marginal rate on extra interest is higher during the phase-in. NYC also has a school tax credit (rate-reduction amount 0.171%/0.228% for income up to $500k) that slightly cuts the effective NYC rate; not reflected."
+ },
+ {
+  "code": "NC",
+  "name": "North Carolina",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0399
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0399
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Deducted on Form D-400 Schedule S, Part B, line 18 'Interest Income From Obligations of the United States or United States' Possessions' (treasury bills named) - 2025 D-401 instructions.",
+  "sourceUrl": "https://www.ncdor.gov/taxes-forms/tax-rate-schedules",
+  "sourceTitle": "NCDOR - Tax Rate Schedules (Individual Income Tax, Current Tax Year Rates)",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "Official page: 'For Taxable Years after 2025, the North Carolina individual income tax rate is 3.99%' (S.L. 2023-134); further cuts from 2027 depend on revenue triggers."
+ },
+ {
+  "code": "ND",
+  "name": "North Dakota",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0
+    ],
+    [
+     49575,
+     0.0195
+    ],
+    [
+     250400,
+     0.025
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0
+    ],
+    [
+     82800,
+     0.0195
+    ],
+    [
+     304850,
+     0.025
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Subtracted on Form ND-1 as 'U.S. obligation interest' (line 5 in the 2025 individual income tax booklet), which covers T-bill interest and fund dividends attributable to U.S. obligations.",
+  "sourceUrl": "https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/28709-form-nd-1es-2026.pdf",
+  "sourceTitle": "2026 Form ND-1ES (SFN 28709, 12-2025) - 2026 Forms ND-1 and ND-EZ Tax Rate Schedules",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "Official 2026 schedules. The tax.nd.gov individual income tax page still shows 2025 (single 0% to $48,475, 1.95% to $244,825, 2.5% above)."
+ },
+ {
+  "code": "OH",
+  "name": "Ohio",
+  "year": 2025,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0
+    ],
+    [
+     26050,
+     0.0275
+    ],
+    [
+     100000,
+     0.03125
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0
+    ],
+    [
+     26050,
+     0.0275
+    ],
+    [
+     100000,
+     0.03125
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "Municipal income taxes (R.C. ch. 718) apply to earned income and net profits, not to intangible income such as interest; no official page was read this run (ODT/legislature sites at 199.218.x were unreachable). School district income tax: the official 2025 IT 1040/SD 100 booklet says traditional-base districts tax MAGI less exemptions, which includes interest. Earned-income-base districts exclude interest. MAGI starts from Ohio AGI, so U.S. obligation interest deducted on the Ohio Schedule of Adjustments is outside both bases. Rates vary by district (district list in the booklet).",
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Deducted on the Ohio Schedule of Adjustments, line 26 'Federal Interest and Dividends Exempt From State Taxation' (Treasury notes, bills and bonds named) - 2025 IT 1040 booklet.",
+  "sourceUrl": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf",
+  "sourceTitle": "2025 Ohio IT 1040 / SD 100 Instructions - 2025 Ohio Income Tax Brackets",
+  "localSourceUrl": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf",
+  "retrieved": "2026-10-19",
+  "note": "UNCERTAIN FOR 2026. Brackets are the same for all filing statuses. Tax above $26,050 is $342 + 2.75% of the excess (a step at the threshold), and business income is taxed at a flat 3%. H.B. 96 (signed 2025-06-30) is widely reported, though not confirmed here from an official text, to make 2026 a flat 2.75% above $26,050 (dropping the 3.125% bracket). Against that, the official '2026 Ohio Estimated Income Tax Payment Worksheet' (PDF modified 2026-05-04; https://dam.assets.ohio.gov/image/upload/v1735926006/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) still shows the 2025 brackets with 3.125% above $100,000. ODT's percentage-method withholding table effective 2026-08-01 (top withholding rate cut from 3.64% to 3.40%) supports a 2026 cut. codes.ohio.gov (R.C. 5747.02) and legislature.ohio.gov were unreachable, so the 2025 official schedule is given. If H.B. 96 is confirmed, 2026 = [[0,0],[26050,0.0275]]."
+ },
+ {
+  "code": "OK",
+  "name": "Oklahoma",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0
+    ],
+    [
+     3750,
+     0.025
+    ],
+    [
+     4900,
+     0.035
+    ],
+    [
+     7200,
+     0.045
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0
+    ],
+    [
+     7500,
+     0.025
+    ],
+    [
+     9800,
+     0.035
+    ],
+    [
+     14400,
+     0.045
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "Subtracted on Form 511, Schedule 511-A, line 1 'Interest on U.S. government obligations' (2025 Form 511 packet).",
+  "sourceUrl": "https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF",
+  "sourceTitle": "Enrolled House Bill No. 2764 (2025), amending 68 O.S. 2355(D) - approved by Governor 05/28/2025",
+  "localSourceUrl": null,
+  "retrieved": "2026-10-19",
+  "note": "Statute: for tax year 2026 and later, single/MFS 0% on first $3,750, 2.5% on next $1,150, 3.5% on next $2,300, 4.5% on the rest. Joint, surviving spouse and head of household: 0% on first $7,500, 2.5% on next $2,300, 3.5% on next $4,600, 4.5% on the rest. Subsection E allows further 0.25-point cuts after a State Board of Equalization certification, effective January 1 after the February certification, so 2027 at the earliest. The OTC 2026 OW-2 withholding packet was not found on oklahoma.gov."
+ },
+ {
+  "code": "OR",
+  "name": "Oregon",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0475
+    ],
+    [
+     4550,
+     0.0675
+    ],
+    [
+     11400,
+     0.0875
+    ],
+    [
+     125000,
+     0.099
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0475
+    ],
+    [
+     9100,
+     0.0675
+    ],
+    [
+     22800,
+     0.0875
+    ],
+    [
+     250000,
+     0.099
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "Metro Supportive Housing Services (SHS) tax: 1% of Metro taxable income above the threshold, for people who live or work in Metro or have Metro-source income. Multnomah County Preschool for All (PFA) tax: 1.5% of Multnomah County taxable income over $125,000 single / $200,000 joint, plus another 1.5% over $250,000 / $400,000; the rate rises by 0.8% in 2028. Both start from Oregon taxable income (the filing tests use Oregon taxable income), so U.S. obligation interest subtracted on the Oregon return is outside them too. Portland Arts Tax is a flat $35 per person, not a percentage of income.",
+  "localBrackets": null,
+  "localRate": {
+   "Metro_SHS": {
+    "rate": 0.01,
+    "threshold_single": 128000,
+    "threshold_joint": 205000,
+    "note": "2026 thresholds (indexed for inflation from 2026; 2021-2025 were $125,000/$200,000). Rate applies to income above the threshold. 'Joint' includes MFJ, HOH, QSS."
+   },
+   "Multnomah_PFA": {
+    "brackets_single": [
+     [
+      0,
+      0.0
+     ],
+     [
+      125000,
+      0.015
+     ],
+     [
+      250000,
+      0.03
+     ]
+    ],
+    "brackets_joint": [
+     [
+      0,
+      0.0
+     ],
+     [
+      200000,
+      0.015
+     ],
+     [
+      400000,
+      0.03
+     ]
+    ],
+    "note": "Thresholds not indexed according to the page; +0.8% in 2028."
+   }
+  },
+  "usInterest": "Subtracted on Schedule OR-ASC, subtraction code 315 'Interest and dividends on U.S. bonds and notes' [ORS 316.680(1)(a)] (Treasury bill interest named) - Publication OR-17 (2025).",
+  "sourceUrl": "https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf",
+  "sourceTitle": "Oregon Withholding Tax Formulas, 150-206-436 (Rev. 12-31-25), effective January 1, 2026",
+  "localSourceUrl": "https://www.portland.gov/revenue/personal-tax",
+  "retrieved": "2026-10-19",
+  "note": "The 2026 Oregon brackets are taken from the official withholding formula, whose BASE brackets copy the 2026 tax-rate brackets (single 4,550 / 11,400 / 125,000; married 9,100 / 22,800 / 250,000). The 125k/250k top thresholds are statutory and not indexed. The 2026 OR-40 rate charts are not published yet. Oregon also lets you subtract part of federal income tax (up to $8,750), which is ignored here."
+ },
+ {
+  "code": "PA",
+  "name": "Pennsylvania",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0307
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0307
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "The local Earned Income Tax under Act 32 is on earned income and net profits only, not interest (DCED: https://dced.pa.gov/local-government/local-income-tax-information/). Exception to note: the Philadelphia School Income Tax on residents' unearned income (interest, dividends) does reach interest, but federal law (31 U.S.C. 3124) exempts U.S. obligation interest from local tax too. The SIT rate and its treatment of Treasury interest were not verified from an official Philadelphia source in this run.",
+  "localBrackets": null,
+  "localRate": null,
+  "usInterest": "PA taxes interest as one of eight separate income classes, with no standard deduction or exemptions. The PA PIT Guide says interest on obligations issued by or on behalf of the U.S. government is not subject to PA PIT, so it is left out of PA-40 Schedule A taxable interest (no separate subtraction line).",
+  "sourceUrl": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/personal-income-tax",
+  "sourceTitle": "PA Department of Revenue - Personal Income Tax",
+  "localSourceUrl": "https://www.pa.gov/agencies/revenue/forms-and-publications/pa-personal-income-tax-guide/interest",
+  "retrieved": "2026-10-19",
+  "note": "Flat 3.07% for all filers (the page is not year-specific; the rate has been unchanged since 2004). The US-obligation exclusion is quoted from the PA PIT Guide 'Interest' chapter (URL in localSourceUrl)."
+ }
+]

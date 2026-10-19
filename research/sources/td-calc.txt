@@ -1,0 +1,48 @@
+Paper Savings Bond Calculator
+ Find out what your paper savings bonds are worth! The calculator will price Series EE, Series E, and Series I savings bonds, and Savings Notes. This calculator is for paper savings bonds only. For electronic savings bonds, log into TreasuryDirect .
+ Go to Savings Bond Calculator 
+ Watch this Help Video about how to use the Calculator. 
+ Before you use it, please be aware of the following information. 
+ Note : The Calculator won’t save an inventory you make with the Google Chrome or Microsoft Edge browser.
+ The Savings Bond Calculator gives information on paper savings bonds of Series EE, Series I, and Series E, and on savings notes:
+ Value today
+ Value on past dates
+ Value on future dates through the current six-month interest period
+ Current and past interest rates
+ Next accrual date
+ Maturity date
+ Total interest earned
+ Year-to-date interest earned
+ Current Value
+ To find the current value of a bond, enter its series, denomination, and issue date, then click "Calculate." (You need not enter the bond’s serial number. But if you’re building an inventory, serial numbers might help you distinguish one bond from another in your list.)
+ To see where the issue date and serial number are found on a bond, see our diagram .
+ Past or Future Value
+ To find the value of a bond on a past or future date, enter the date in the "Value as of" field; enter the bond’s series, denomination, and issue date; then click "Update." (Past values are available back to January 1996. Future values are available for remaining months in a bond’s current six-month rate period.)
+ Inventory of Bonds
+ You can create an inventory of paper bonds and check their values over and over in the future without re-entering information:
+ To create an inventory, enter information about your paper bonds, one bond at a time, into the Calculator.
+ To save an inventory for future use:
+ Click the "Save" button in the results section of the Calculator. This creates a new page, your inventory page.
+ Using your browser’s "Save As" function, save the new page as a web page or HTML page.
+ Note : The Calculator won’t save an inventory you make with the Google Chrome or Microsoft Edge browser.
+ To use an inventory you created previously , open the inventory and click whichever one of these buttons you see: "Return to Savings Bond Calculator" or "Update." This automatically updates the values of the bonds in the inventory and enables you to add bonds to the inventory.
+ See our detailed page on saving your inventory 
+ Also, see more detailed instructions for using the Calculator .
+ Things the Calculator Won’t Do
+ The Savings Bond Calculator:
+ WILL NOT provide accurate results for the value of electronic bonds. If you hold a bond in electronic form, log in to TreasuryDirect to find the value. 
+ WILL NOT verify you own bonds.
+ WILL NOT guarantee the serial number you enter is valid.
+ WILL NOT guarantee a bond is eligible to be cashed.
+ WILL NOT create a savings bond based on information you enter.
+ WILL NOT save an inventory you make with the Google Chrome or Microsoft Edge browser.
+ Warning: Scam
+ Beware of internet scams with a picture of this page claiming you can enter your birth certificate number to access bonds owed to you. Those claims are false, and attempts to defraud the government can be prosecuted. See Birth Certificate Bonds .
+ Also see:
+ Growth Calculator 
+ How to Use the Growth Calculator 
+ Savings Planner 
+ How to use the Savings Bonds Planner 
+ Tax Advantages Calculator 
+ How to Use the Tax Advantages Calculator 
+ Example Savings Bond Diagram

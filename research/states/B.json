@@ -1,0 +1,575 @@
+[
+ {
+  "code": "IL",
+  "name": "Illinois",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0495
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0495
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localRate": null,
+  "usInterest": "Subtracted on Schedule M, Line 22 (U.S. Treasury bonds, bills, notes, savings bonds and U.S. agency interest), carried to Form IL-1040 Line 7 (2025 Schedule M instructions).",
+  "sourceUrl": "https://tax.illinois.gov/research/taxrates/income.html",
+  "sourceTitle": "Income Tax Rates - Illinois Department of Revenue",
+  "retrieved": "2026-10-19",
+  "note": "Flat 4.95% of net income for individuals, effective July 1, 2017 and still current per IDOR. No local income taxes in Illinois. US-interest line taken from the 2025 Schedule M instructions (tax.illinois.gov, il-1040-schedule-m-instr.pdf)."
+ },
+ {
+  "code": "IN",
+  "name": "Indiana",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0295
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0295
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "County income tax in all 92 counties, applied to the same Indiana adjusted gross income as the state tax (so it reaches interest). The county of residence on Jan. 1 sets the rate. 2026 rates run from 0.50% (Porter) to 3.00% (Randolph); Marion County (Indianapolis) is 2.02%.",
+  "localRate": {
+   "min": 0.005,
+   "max": 0.03,
+   "typical": 0.0202
+  },
+  "usInterest": "Deducted on Schedule 2, line 4 'Interest on U.S. government obligations' (2025 IT-40 Schedule 2). Because the county tax uses the same Indiana AGI, the deduction also removes it from the county tax base.",
+  "sourceUrl": "https://www.in.gov/dor/files/dn01.pdf",
+  "sourceTitle": "Indiana DOR Departmental Notice #1, Effective Jan. 1, 2026 (R46 / 01-26): How to Compute Withholding for State and County Income Tax",
+  "retrieved": "2026-10-19",
+  "note": "Notice states: 'For 2026, the state adjusted gross income tax rate for individuals is 2.95%.' County min/max/typical read from the notice's county table (median of the 92 counties is about 1.95%). Schedule 2 line number comes from DOR forms found by search; I could not open the forms.in.gov PDF from here (403 error)."
+ },
+ {
+  "code": "IA",
+  "name": "Iowa",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.038
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.038
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "School district surtax: a percentage of the Iowa tax after credits (IA 1040 line 19), set by each school district (look it up at tax-mapper.iowa.gov). EMS income surtax in six counties (Appanoose, Cass, Pocahontas, Sac, Shelby, Winnebago). Because these are percentages of the state tax, not of income, they raise the effective rate on interest proportionally.",
+  "localRate": null,
+  "usInterest": "Subtracted on IA 1040 Schedule 1, line 1, column B (interest from federal securities such as U.S. Savings Bonds and Treasury notes, to the extent included on IA 1040 line 2). Repo interest on U.S. securities and agency obligations such as Freddie Mac do not qualify.",
+  "sourceUrl": "https://revenue.iowa.gov/press-release/2025-10-21/idr-announces-2026-individual-income-tax-and-interest-rates",
+  "sourceTitle": "IDR Announces 2026 Individual Income Tax and Interest Rates (Iowa Department of Revenue, Oct. 21, 2025)",
+  "retrieved": "2026-10-19",
+  "note": "Flat 3.8% under SF 2442 (2024): 'In 2026, all levels of taxable individual income will be subject to this rate.' Some older IDR pages still mention 3.9% for 2026; they are superseded. School surtax rates vary by district and were not tabulated."
+ },
+ {
+  "code": "KS",
+  "name": "Kansas",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.052
+    ],
+    [
+     23000,
+     0.0558
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.052
+    ],
+    [
+     46000,
+     0.0558
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localRate": null,
+  "usInterest": "Subtracted on Schedule S, Part A, line A12 'Interest on U.S. Government obligations' (2025 Schedule S), net of related expenses; the net modification goes to K-40 line 2.",
+  "sourceUrl": "https://www.ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html",
+  "sourceTitle": "K.S.A. 79-32,110, Tax imposed; schedules of tax rates (Kansas Office of Revisor of Statutes)",
+  "retrieved": "2026-10-19",
+  "note": "Statute: 'For tax year 2024, and all tax years thereafter', 5.2% up to $23,000 (single) / $46,000 (joint), then 5.58%. K.S.A. 79-32,110c (SB 269, 2025) can cut rates automatically when revenue exceeds a threshold. Per KDOR Notice 25-06, the August 2025 test did not trigger, so there is no cut for tax year 2026. I could not open ksrevenue.gov from here (connection refused or timed out), so that outcome and the line A12 reference come from search excerpts of KDOR documents. SB 283 (2025, rate cut) died in committee per kslegislature.gov. Kansas has no local income tax on individuals."
+ },
+ {
+  "code": "KY",
+  "name": "Kentucky",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.035
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.035
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "City, county and school-district occupational license taxes apply only to wages and net business profits, not to interest, so they do not affect T-bills.",
+  "localRate": null,
+  "usInterest": "Subtracted on Schedule M (Form 740), line 8 'interest income from U.S. government bonds and securities', carried to Form 740 page 1, line 8 (2025 Schedule M). Securities that are only federally guaranteed (FNMA, GNMA, FHLMC) do not qualify.",
+  "sourceUrl": "https://revenue.ky.gov/Software-Developer/Documents/TY2026%20E-File%20HandBook%20Publication%201345%20v1.0.pdf",
+  "sourceTitle": "Kentucky Department of Revenue, TY2026 E-File Handbook (Publication 1345 v1.0)",
+  "retrieved": "2026-10-19",
+  "note": "Handbook: 'For 2026, the tax rate for individual income tax is 3.5%.' Down from 4.0% under 2025 HB 1. KRS 141.020 contains automatic future cuts tied to budget-reserve tests; 2026-session bills changing rates from 2027 were not checked."
+ },
+ {
+  "code": "LA",
+  "name": "Louisiana",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.03
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.03
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localRate": null,
+  "usInterest": "Exempt (R.S. 47:293(9)(a)(iii) and 31 U.S.C. 3124). Deducted on IT-540 Schedule E, line 4 with code 01E.",
+  "sourceUrl": "https://revenue.louisiana.gov/tax-education-and-faqs/faqs/income-tax-reform/what-are-the-individual-income-tax-rates-and-brackets/",
+  "sourceTitle": "What are the individual income tax rates and brackets? - Louisiana Department of Revenue",
+  "retrieved": "2026-10-19",
+  "note": "LDR: 'For taxable periods beginning on or after January 1, 2025, the individual income tax rate is a flat 3%.' Applies to 2026. 2026 HB 411 (phase-down starting 2028) is only a bill. US-interest rule from LDR FAQ 'Are interest and dividends from U.S. government obligations exempt...'. No local income tax."
+ },
+ {
+  "code": "ME",
+  "name": "Maine",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.058
+    ],
+    [
+     27400,
+     0.0675
+    ],
+    [
+     64850,
+     0.0715
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.058
+    ],
+    [
+     54850,
+     0.0675
+    ],
+    [
+     129750,
+     0.0715
+    ]
+   ]
+  },
+  "surtax": "New for tax years beginning on or after Jan. 1, 2026: a 2% surcharge on Maine taxable income above $1,000,000 (single), $1,500,000 (married filing jointly or head of household) or $750,000 (married filing separately). The top marginal rate therefore becomes 9.15%. Thresholds are indexed from 2027.",
+  "local": null,
+  "localRate": null,
+  "usInterest": "Subtracted on Form 1040ME Schedule 1S, line 1: income from direct U.S. Government obligations (Series EE/HH bonds, Treasury bills and notes), 36 M.R.S. 5122(2)(A) (2025 instructions). The total flows to 1040ME line 15b.",
+  "sourceUrl": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2026-05/ind_tax_rate_sched_2026_rev.pdf",
+  "sourceTitle": "State of Maine 2026 Individual Income Tax Rates (Maine Revenue Services, revised May 20, 2026)",
+  "retrieved": "2026-10-19",
+  "note": "Head of household: 5.8% under $41,100, 6.75% to $97,300, 7.15% above. The schedule shows the upper-bracket starting points as 'less than X' and 'X or more'; they are entered here as rate-start thresholds. No local income tax."
+ },
+ {
+  "code": "MD",
+  "name": "Maryland",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.02
+    ],
+    [
+     1000,
+     0.03
+    ],
+    [
+     2000,
+     0.04
+    ],
+    [
+     3000,
+     0.0475
+    ],
+    [
+     100000,
+     0.05
+    ],
+    [
+     125000,
+     0.0525
+    ],
+    [
+     150000,
+     0.055
+    ],
+    [
+     250000,
+     0.0575
+    ],
+    [
+     500000,
+     0.0625
+    ],
+    [
+     1000000,
+     0.065
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.02
+    ],
+    [
+     1000,
+     0.03
+    ],
+    [
+     2000,
+     0.04
+    ],
+    [
+     3000,
+     0.0475
+    ],
+    [
+     150000,
+     0.05
+    ],
+    [
+     175000,
+     0.0525
+    ],
+    [
+     225000,
+     0.055
+    ],
+    [
+     300000,
+     0.0575
+    ],
+    [
+     600000,
+     0.0625
+    ],
+    [
+     1200000,
+     0.065
+    ]
+   ]
+  },
+  "surtax": "A 2% additional tax on net capital gain when federal AGI exceeds $350,000 (line 8b). It does not apply to interest.",
+  "local": "County / Baltimore City local income tax, applied to Maryland taxable net income (so it reaches interest). 2026 rates: Worcester 2.25% (lowest); Talbot 2.40%; Garrett 2.65%; Cecil 2.74%; Washington 2.95%; Carroll and Charles 3.03%; Harford 3.06%; most counties, including Montgomery, Prince George's, Baltimore County, Howard and Baltimore City, 3.20%; Dorchester and Kent 3.30% (highest). Anne Arundel is graduated 2.70/2.94/3.20%. Frederick is graduated 2.25/2.75/2.96/3.20%. Nonresidents pay a special nonresident tax of 2.25%.",
+  "localRate": {
+   "min": 0.0225,
+   "max": 0.033,
+   "typical": 0.032
+  },
+  "usInterest": "Subtracted on Form 502 line 13 through Form 502SU, code 'ab' (income from U.S. Government obligations; GNMA excluded). This also removes it from the county tax base (2025 resident booklet).",
+  "sourceUrl": "https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf",
+  "sourceTitle": "Comptroller of Maryland, 2026 Payment Voucher Worksheet for Estimated Tax (tax rate schedules I and II and 2026 local rates)",
+  "retrieved": "2026-10-19",
+  "note": "Schedule I covers single, MFS and dependents. Schedule II covers MFJ, head of household and qualifying surviving spouse. The 6.25% and 6.5% brackets were added by the 2025 session (HB 352). Brackets were converted from the schedule's '$X+1 to' form to rate-start thresholds."
+ },
+ {
+  "code": "MA",
+  "name": "Massachusetts",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.05
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.05
+    ]
+   ]
+  },
+  "surtax": "A 4% surtax on taxable income above $1,107,750 for tax year 2026 (2025: $1,083,150). The same threshold applies to joint returns, so the top rate on interest is 9%. Interest exempt from Massachusetts tax, such as federal obligations, is excluded from the surtax base.",
+  "local": null,
+  "localRate": null,
+  "usInterest": "Excluded from Massachusetts gross income. It is reported in total interest on Schedule B and subtracted on Schedule B line 6a (U.S./Commonwealth debt obligations), per the 2025 Form 1 and Schedule B instructions.",
+  "sourceUrl": "https://www.mass.gov/info-details/massachusetts-4-surtax-on-taxable-income",
+  "sourceTitle": "Massachusetts 4% Surtax on Taxable Income (Massachusetts DOR, updated June 1, 2026)",
+  "retrieved": "2026-10-19",
+  "note": "Interest (other than Massachusetts bank interest) is Part A income taxed at 5%. Massachusetts bank interest is Part B, also 5%. The 8.5% rate applies only to short-term capital gains and collectibles, not interest. The 5% base rate was not re-read on mass.gov (403 to curl/WebFetch). The line 6a reference comes from search excerpts of the 2025 Schedule B."
+ },
+ {
+  "code": "MI",
+  "name": "Michigan",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0425
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0425
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "24 cities levy an income tax: Detroit, Albion, Battle Creek, Benton Harbor, Big Rapids, East Lansing, Grand Rapids, Flint, Grayling, Hamtramck, Highland Park, Hudson, Ionia, Jackson, Lansing, Lapeer, Muskegon, Muskegon Heights, Pontiac, Port Huron, Portland, Saginaw, Springfield and Walker. Residents are taxed on all income, including interest, under the uniform city income tax ordinance. Nonresidents pay half the rate on city-source earnings only. Detroit's resident rate is 2.4% (nonresident 1.2%). Most other cities charge residents 1%, and a few charge more.",
+  "localRate": {
+   "min": 0.01,
+   "max": 0.024,
+   "typical": 0.01
+  },
+  "usInterest": "Subtracted on Schedule 1, line 10 'income from U.S. government obligations' (net of related expenses), carried to MI-1040 line 13 (2025 Schedule 1 instructions). City income taxes also cannot tax U.S. obligation interest (31 U.S.C. 3124).",
+  "sourceUrl": "https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year",
+  "sourceTitle": "4.25% Income Tax Rate for Individuals and Fiduciaries in 2026 Tax Year (Michigan Department of Treasury, April 15, 2026)",
+  "retrieved": "2026-10-19",
+  "note": "The rate-cut formula was not triggered (FY2025 GF/GP revenue -1.56% against 2.70% inflation), so the 2026 rate is 4.25%. City list is from michigan.gov/taxes/citytax/what-cities-impose-an-income-tax. Detroit's 2.4% was read on detroitmi.gov. The 1% standard rate for other cities and 'resident interest is taxable' come from the City Income Tax Act as I know it; I could not open the statute (legislature.mi.gov blocked), so the min/typical figures are not verified. HB 6225 (2026, roll back to 3.9%) is only introduced."
+ },
+ {
+  "code": "MN",
+  "name": "Minnesota",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0535
+    ],
+    [
+     33310,
+     0.068
+    ],
+    [
+     109430,
+     0.0785
+    ],
+    [
+     203150,
+     0.0985
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0535
+    ],
+    [
+     48700,
+     0.068
+    ],
+    [
+     193480,
+     0.0785
+    ],
+    [
+     337930,
+     0.0985
+    ]
+   ]
+  },
+  "surtax": "Minnesota Net Investment Income Tax (NIIT): 1% on net investment income above $1,000,000, for tax years beginning after Dec. 31, 2023 (Schedule NIIT, result on Form M1 line 14). It reaches taxable interest of very high-income filers. Its base starts from federal net investment income; I did not confirm whether U.S. obligation interest is removed (31 U.S.C. 3124 should exclude it).",
+  "local": null,
+  "localRate": null,
+  "usInterest": "Subtracted on Schedule M1M, line 14 'Net interest or mutual fund dividends from U.S. bonds' (2025 M1M), reduced by related expenses. GNMA, FNMA and FHLMC are excluded.",
+  "sourceUrl": "https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets",
+  "sourceTitle": "Minnesota Income Tax Rates and Brackets (Minnesota Department of Revenue)",
+  "retrieved": "2026-10-19",
+  "note": "2026 brackets as published by MN DOR, indexed and rounded to $10. The page lists ranges starting at $X+1; they are entered here as rate-start thresholds. Read via WebFetch (curl blocked by captcha). NIIT read on revenue.state.mn.us/net-investment-income-tax-niit (last updated Dec. 19, 2025). Whether the $1M threshold differs for joint filers was not seen. The M1M line 14 reference comes from search excerpts of the 2025 M1M PDF. No local income tax."
+ },
+ {
+  "code": "MS",
+  "name": "Mississippi",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0
+    ],
+    [
+     10000,
+     0.04
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0
+    ],
+    [
+     10000,
+     0.04
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": null,
+  "localRate": null,
+  "usInterest": "Exempt. On Schedule B (Form 80-108), line 2 'Amount of Mississippi nontaxable interest' removes U.S. and Mississippi obligation interest, and line 3 carries the taxable interest to Form 80-105 line 43.",
+  "sourceUrl": "https://www.dor.ms.gov/individual/tax-rates",
+  "sourceTitle": "Individual Income Tax Rates - Mississippi Department of Revenue",
+  "retrieved": "2026-10-19",
+  "note": "DOR table: Tax Year 2025, 4.4% on taxable income above $10,000; Tax Year 2026, 4%; Tax Year 2027, 3.75%. The first $10,000 is taxed at 0%. On a combined (joint) return each spouse may compute separately, so a couple where both have income gets $10,000 at 0% each (effective $20,000). Joint bracket entered as $10,000 (conservative). The same page has a stray sentence calling 4.4% the 2026 rate; the year table and later lines say 4% for 2026."
+ },
+ {
+  "code": "MO",
+  "name": "Missouri",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0
+    ],
+    [
+     1348,
+     0.02
+    ],
+    [
+     2696,
+     0.025
+    ],
+    [
+     4044,
+     0.03
+    ],
+    [
+     5392,
+     0.035
+    ],
+    [
+     6740,
+     0.04
+    ],
+    [
+     8088,
+     0.045
+    ],
+    [
+     9436,
+     0.047
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0
+    ],
+    [
+     1348,
+     0.02
+    ],
+    [
+     2696,
+     0.025
+    ],
+    [
+     4044,
+     0.03
+    ],
+    [
+     5392,
+     0.035
+    ],
+    [
+     6740,
+     0.04
+    ],
+    [
+     8088,
+     0.045
+    ],
+    [
+     9436,
+     0.047
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "Kansas City and St. Louis earnings taxes (1%) apply only to wages and net business profits, not to interest, so they do not affect T-bills.",
+  "localRate": null,
+  "usInterest": "Subtracted on Form MO-A, Part 1, line 8 'Interest from exempt federal obligations' (lists U.S. Treasury bills, bonds and notes). Requires a detailed list or the 1099s (2025 MO-1040 instructions).",
+  "sourceUrl": "https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf",
+  "sourceTitle": "2026 Missouri Withholding Tax Formula (Missouri Department of Revenue)",
+  "retrieved": "2026-10-19",
+  "note": "dor.mo.gov blocks this network (Imperva 'Error 16', also in Chrome). The official PDF was read from its Internet Archive copy captured 2026-10-13 (web.archive.org/web/20261013030900id_/...). Annual 2026 table: 0% to $1,348, then 2.0/2.5/3.0/3.5/4.0/4.5% per $1,348 band, and 4.7% above $9,436. Missouri brackets are the same for all filing statuses. Indexing and the top-rate cuts are in RSMo 143.011 (read on revisor.mo.gov). This is the withholding formula; the 2026 MO-1040 tax table should match, but I could not open it."
+ }
+]

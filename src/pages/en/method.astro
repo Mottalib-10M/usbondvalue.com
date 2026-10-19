@@ -1,0 +1,60 @@
+---
+/** Method: every rule, every formula, the tests, the limits. Figures from the kit. */
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { KIT as K } from '../../lib/kit';
+import { src, table } from '../../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('method', lang);
+const P = K.P, C = P.checks, B = P.bonds;
+const title = 'Savings Bond Calculator Method 2026: Treasury Rules, US';
+const description = 'How the 2026 savings bond and T-bill calculators work: 31 CFR 351 and 359 valuation, rate tables, 291 redemption tables as tests, auction math and state tax.';
+const W = K.R.i.windows[K.R.i.windows.length - 1];
+const b13 = K.bill('13-Week');
+const days13 = P.tbills.termDays['13-Week'];
+const br = P.tax.brackets.single.map(([lo, r], i, a) => [K.pct(r, 0), K.usd(lo), i + 1 < a.length ? K.usd(a[i + 1][0]) : 'and up', K.usd(P.tax.brackets.joint[i][0])]);
+const nStates = K.STATE_SLUGS.length;
+const old = K.STATE_SLUGS.filter((s) => K.S(s).year !== 2026).map((s) => K.S(s).name);
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'How we calculate', description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'How we calculate', path }])]} breadcrumbs={[{ label: 'How we calculate' }]}>
+  <article class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>How the calculators work</h1>
+    <p>Every calculator on this site runs in your browser on one engine and a few data files: the savings bond rates published by the Treasury, the results of Treasury bill auctions, the 2026 federal brackets and the income tax schedule of each state. Each file says where its figures come from and when they were read ({K.day(P.retrieved_at)} for this edition). This page lists the rules, the formulas, the tests and what is left out.</p>
+
+    <h2>1. Units and compounding</h2>
+    <p>The Treasury values a savings bond through a small unit and then scales it. For Series I the unit is a {K.usd2(B.iUnit)} bond (<Fragment set:html={src('cfr_359', '31 CFR 359')} />); for Series EE it is a bond bought for {K.usd2(B.eeUnit)}, face value {K.usd2(B.eeFaceUnit)} (<Fragment set:html={src('cfr_351', '31 CFR 351')} />). Every six months from the issue month, the unit's value is multiplied by one plus half the annual rate and rounded to the cent. Inside a six-month period, the value on the first day of month m (1 to 5) is the period's opening value times (1 + rate ÷ 2) to the power m ÷ 6, rounded to the cent. EE bonds issued before May 1997 had interest credited only every six months; the engine applies that too.</p>
+    <p>A paper bond is a whole number of units: a {K.usd(100)} face bond is four units. An electronic bond can be bought for any amount to the cent, so the Treasury values it as a {K.usd(100)} bond and scales: value = amount ÷ 100 × value of the {K.usd(100)} bond, rounded to the cent. That is why a paper bond and an electronic bond of the same series and date can differ by a few cents.</p>
+
+    <h2>2. Holding period, penalty and maturity</h2>
+    <p>A bond cannot be cashed during its first {B.minHoldMonths} months ({B.minHoldMonthsBeforeFeb2003} months for bonds issued through January 2003). Until it is {B.penaltyUntilMonths / 12} years old, the amount paid is the value {B.penaltyMonths} months earlier, never less than the price; the calculator shows that difference in dollars. Interest stops {B.finalMaturityMonths / 12} years after issue (Series E bonds issued before December 1965 earned for 40 years). An EE bond issued since June 2003 is worth at least twice its price at {B.eeDoublingMonths / 12} years; one issued from May 1995 to May 2003 reaches face value at 17 years.</p>
+
+    <h2>3. I bond rates</h2>
+    <p>The composite rate for a six-month period is the fixed rate of the issue month plus twice the semiannual inflation rate plus their product, rounded to the nearest 0.01 % and never below zero. The inflation rate is the change in the CPI-U (all items, U.S. city average, not seasonally adjusted, <Fragment set:html={src('bls_cpi', 'BLS series CUUR0000SA0')} />) from September to March or from March to September, announced on May 1 and November 1. A bond takes the inflation rate of the latest announcement at the start of each of its own periods. For bonds issued from May to October 2026: {K.pct(W.fixed)} + 2 × {K.pct(W.inflation)} + {K.pct(W.fixed)} × {K.pct(W.inflation)} = {K.pct(K.composite(W.fixed, W.inflation))}. Fixed and inflation rates since September 1998 come from the <Fragment set:html={src('td_ibond_history', 'TreasuryDirect rate history')} />.</p>
+
+    <h2>4. EE bond rates</h2>
+    <p>EE bonds issued since May 2005 earn the fixed rate of their issue month (<Fragment set:html={src('td_ee2005', 'TreasuryDirect rate table')} />), {K.pct(K.R.eeCurrent)} for bonds bought from May to October 2026. Bonds issued from May 1997 to April 2005 earn a rate reset every six months (<Fragment set:html={src('td_ee1997', 'table')} />). Bonds issued from May 1995 to April 1997 earned a short-term rate for five years and a long-term rate after that (<Fragment set:html={src('td_ee1995', 'table')} />). When the Treasury has not published a rate for a later period, the calculator leaves the value blank, unless you ask it to project at the current rate.</p>
+
+    <h2>5. Older bonds</h2>
+    <p>Series E bonds, savings notes and EE bonds issued before May 1995 have all stopped earning interest. Their final value is fixed, and we take it from the last redemption table the Treasury published, May 2023 (<Fragment set:html={src('fd_redemption', 'Fiscal Data')} />). For EE bonds issued from June 1993 to April 1995, which reached 30 years after that table, the calculator shows the minimum their rules set: 4 % a year compounded semiannually for 30 years, or {K.usd2(Math.round(K.P.bonds.eeUnit * Math.pow(1.02, 60) * 400) / 100)} per {K.usd(100)} of face value.</p>
+
+    <h2>6. The test: the Treasury's own tables</h2>
+    <p>From {K.month(C.tablesFrom)} to {K.month(C.tablesTo)} the Treasury published a redemption table every month: the value of a {K.usd(100)} bond of every series and issue month. We downloaded the {C.redemptionTables} tables and compared the engine with every Series I and Series EE value of bonds issued from May 1995: {K.num(C.redemptionValues)} values for {C.issueMonths} issue months. All are equal to the cent. This test runs before every build; a wrong rate or a rounding change stops the site from being published.</p>
+
+    <h2>7. Treasury bills</h2>
+    <p>A bill is sold at a discount. The price per {K.usd(100)} is 100 × (1 − discount rate × days ÷ 360), rounded to six decimals. The investment rate (bond-equivalent yield) is (100 − price) ÷ price × 365 ÷ days for bills of up to half a year, with 366 days when a February 29 falls within the year after issue, and the Treasury's quadratic formula for the 52-week bill. On the 13-week auction of {K.day(b13.auction)}: discount {K.pct(b13.discount / 100, 3)}, {days13} days, price {K.dec(b13.price, 6)}, investment rate {K.pct(b13.investment / 100, 3)}. The engine reproduces the published price and investment rate of {C.auctions} bill auctions from {K.month(C.auctionsFrom)} to {K.month(C.auctionsTo)}. Auction results come from the <Fragment set:html={src('fd_auctions', 'Fiscal Data auctions dataset')} /> and are read when the site is built.</p>
+
+    <h2>8. Tax-equivalent yield</h2>
+    <p>Interest on Treasury bills and savings bonds is exempt from state and local income tax (<Fragment set:html={src('usc_3124', '31 U.S.C. 3124')} />). A fully taxable yield r leaves the same after tax as an exempt yield y when r × (1 − f − s) = y × (1 − f), where f is your federal marginal rate and s your state and local marginal rate; if you deduct state tax on Schedule A, r = y ÷ (1 − s). The federal rate comes from the 2026 brackets of <Fragment set:html={src('irs_rp_2025_32', 'Rev. Proc. 2025-32')} />; the state rate from the schedule of each of the {nStates} jurisdictions, read on its revenue department's site{old.length ? ` (the latest published schedule, 2025, for ${old.join(', ')})` : ''}. The same taxable income is used for both, which is an approximation: state taxable income is defined by each state.</p>
+    <Fragment set:html={table(['Rate', 'Single, from', 'Single, to', 'Joint, from'], br, '2026 federal brackets on taxable income, Rev. Proc. 2025-32.', ['l', 'r', 'r', 'r'])} />
+
+    <h2>9. What is not modeled</h2>
+    <ul>
+      <li>Bonds that were reissued, partly cashed or bought with a tax refund in odd amounts: the value follows the same rules, but enter the amount the bond shows.</li>
+      <li>Interest already reported each year to the IRS: the calculators show total interest, not what is left to report.</li>
+      <li>Alternative minimum tax, the net investment income tax, credits and phase-outs of state credits.</li>
+      <li>Secondary-market prices of bills bought from a broker before maturity; the bill pages use auction results.</li>
+    </ul>
+    <p>Corrections: <a href={route('contact', lang)}>contact page</a>. These are calculations from public rules, not personal financial or tax advice.</p>
+  </article>
+</PageLayout>

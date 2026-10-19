@@ -1,0 +1,87 @@
+Understanding Pricing and Interest Rates
+ This page explains pricing and interest rates for the five different Treasury marketable securities.
+ For information on recent auctions, see Results of recent auctions 
+ Bills
+ Bills are short-term securities that mature in one year or less. They are sold at face value (also called par value) or at a discount. When they mature, we pay you the face value.
+ The difference between the face value and the discounted price you pay is "interest."
+ To see what the purchase price will be for a particular discount rate, use the formula:
+ Price = Face value (1 – (discount rate x time)/360)
+ Example:
+ A $1,000 26-week bill sells at auction for a discount rate of 0.145%.
+ Price = 1000 (1 – (.00145 x 182)/360) = $999.27
+ The formula shows that the bill sells for $999.27, giving you a discount of $0.73. 
+ When you get $1,000 after 26 weeks, you have earned $0.73 in "interest."
+ Bonds and Notes
+ Bonds are long-term securities that mature in 20 or 30 years.
+ Notes are relatively short or medium-term securities that mature in 2, 3, 5, 7, or 10 years.
+ Both bonds and notes pay interest every six months. The interest rate for a particular security is set at the auction.
+ The price for a bond or a note may be the face value (also called par value) or may be more or less than the face value. The price depends on the yield to maturity and the interest rate.
+ If the yield to maturity is 
+ the price of the bond or note will be 
+ greater than the interest rate 
+ less than par value 
+ equal to the interest rate 
+ par value 
+ less than the interest rate 
+ more than par value 
+ The "yield to maturity" is the annual rate of return on the security.
+ Here are examples from recent auctions:
+ Type of security 
+ Time to maturity 
+ High yield at auction 
+ Interest rate set at auction 
+ Price 
+ Bond 
+ 20 year 
+ 1.850% 
+ 1.750% 
+ 98.336995 
+ Note 
+ 7 year 
+ 1.461% 
+ 1.375% 
+ 99.429922 
+ In both examples, the yield is higher than the interest rate. Therefore, the price was lower than par value.
+ During the life of the bond or note, you earn interest at the set rate on the par value of the bond or note. The interest rate set at auction will never be less than 0.125%.
+ If you still own the bond after 20 years or the note after seven years, you get back the face value of the security. That means you will have also earned $1.66 for every $100 par value of your bond and $0.57 for every $100 par value of your note.
+ TIPS
+ Treasury Inflation-Protected Securities (TIPS) are available both as medium and long-term securities. They mature in 5, 10, or 30 years.
+ Like bonds and notes, the price and interest rate are determined at the auction.
+ The interesting aspect of TIPS, that differs from bonds and notes, is that the principal goes up and down with inflation and deflation. While the interest rate is fixed, the amount of interest you get every six months may vary due to any change in the principal.
+ To calculate the inflation-adjusted interest you will get, near the time your interest payment is due, follow these steps:
+ Locate your TIPS on the TIPS Inflation Index Ratios page.
+ Follow the link and locate the Index Ratio that corresponds to the interest payment date for your security.
+ Multiply your original principal amount by the Index Ratio. (this is your inflation-adjusted principal).
+ Now, multiply your inflation-adjusted principal by half the stated interest (coupon) rate on your security.
+ The resulting number is your semi-annual interest payment.
+ Example:
+ You have $1,000 invested in a 5-year TIPS with an interest rate of 0.125%. 
+ You will get an interest payment next week and want to know how much it will be.
+ When you look up the Index Ratio for your TIPS, you see it is 1.01165. 
+ Multiplying your $1,000 by 1.01165, you get your adjusted principal: $1,011.65.
+ For this six-month payment, you get half of 0.125% (your annual interest rate), which is 0.0625%.
+ Turn the percent into a decimal by moving the decimal point two places to the left: 0.000625.
+ Now, multiply the adjusted principal by the half-year interest rate: In this example, multiplying $1,011.65 times 0.000625 gives you your expected interest payment: $0.63.
+ Floating Rate Notes (FRNs)
+ FRNs are relatively short-term investments that mature in two years.
+ The price of an FRN is determined at auction. The price may be greater than, less than, or equal to the FRN's par amount.
+ The interest rate of an FRN changes, or “floats,” over the life of the FRN.
+ The interest rate is the sum of two parts: an index rate and a spread.
+ Index rate - The index rate of your FRN is tied to the highest accepted discount rate of the most recent 13-week Treasury bill. We auction the 13-week bill every week, so the index rate of an FRN is reset every week. You can see the daily index for current FRNs .
+ Spread - The spread is a rate we apply to the index rate. The spread stays the same for the life of an FRN. The spread is determined at auction when the FRN is first offered. The spread is the highest accepted discount margin in that auction.
+ The spread plus the index rate equals the interest rate.
+ We apply the interest rate to an FRN's par amount daily. The aggregate interest earned to date on an FRN accumulates every day.
+ For more detailed formulas and useful tables
+ See The Code of Federal Regulations, §356.20, Appendix B 
+ We're Here to Help
+ We welcome your questions and comments. 
+ Write Us
+ If you write to us and want a response, please put your address in your letter (not just on the envelope). 
+ Department of the Treasury 
+ Bureau of the Fiscal Service 
+ Attention: Auctions 
+ 3201 Pennsy Drive, Building E 
+ Landover, MD 20785
+ Call Us
+ For general inquiries, please call us at 844-284-2676 (toll free)
+ E-mail Us

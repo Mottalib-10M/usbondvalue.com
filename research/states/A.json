@@ -1,0 +1,698 @@
+[
+ {
+  "code": "AL",
+  "name": "Alabama",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.02
+    ],
+    [
+     500,
+     0.04
+    ],
+    [
+     3000,
+     0.05
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.02
+    ],
+    [
+     1000,
+     0.04
+    ],
+    [
+     6000,
+     0.05
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "Local occupational license taxes (e.g. Birmingham, Bessemer, Gadsden, some counties) apply only to wages/net business earnings, not to interest; no local tax reaches T-bill interest.",
+  "usInterest": "Interest on U.S. obligations is exempt from Alabama income tax (excluded from Alabama gross income; reported as exempt interest on Form 40, Schedule B). Exact line not re-verified for 2026.",
+  "sourceUrl": "https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate/",
+  "sourceTitle": "Alabama Department of Revenue - FAQ: What is Alabama's Individual Income Tax Rate?",
+  "note": "Statutory rates (Code of Ala. 40-18-5), not indexed and not year-specific; unchanged for 2026. Head of family and MFS use the single schedule. Alabama allows a deduction for federal income tax paid, which lowers the effective state rate; not modeled here.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "AK",
+  "name": "Alaska",
+  "year": 2026,
+  "hasIncomeTax": false,
+  "taxesInterest": false,
+  "brackets": {
+   "single": [],
+   "joint": []
+  },
+  "surtax": null,
+  "local": "No local income taxes in Alaska (local governments levy sales/property taxes only).",
+  "usInterest": "Not applicable: no individual income tax.",
+  "sourceUrl": "https://tax.alaska.gov/programs/programs/index.aspx",
+  "sourceTitle": "Alaska Department of Revenue, Tax Division - Tax Programs",
+  "note": "Alaska has no individual income tax (repealed 1980). Official page not re-fetched in this pass; status is long-standing.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "AZ",
+  "name": "Arizona",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.025
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.025
+    ]
+   ]
+  },
+  "surtax": "None for individuals in practice (the Prop 208 3.5% surcharge, A.R.S. 43-1013, was struck down by the courts).",
+  "local": "Arizona cities and counties do not levy income taxes.",
+  "usInterest": "Subtraction from Arizona gross income for interest on obligations of the United States, A.R.S. 43-1022(4) (Form 140 subtractions section). ADOR also lists 'interest from U.S. government obligations' as income Arizona does not tax.",
+  "sourceUrl": "https://azdor.gov/forms/individual/form-140-optional-tax-tables",
+  "sourceTitle": "Arizona Department of Revenue - Form 140 Optional Tax Tables ('For tax year 2023 and beyond ... Arizona's flat tax rate of 2.5%')",
+  "note": "Flat 2.5% for tax year 2023 and beyond per ADOR. Subtraction text read on https://www.azleg.gov/ars/43/01022.htm and ADOR individuals page https://azdor.gov/individual-income-tax-information.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "AR",
+  "name": "Arkansas",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0
+    ],
+    [
+     5600,
+     0.02
+    ],
+    [
+     11200,
+     0.03
+    ],
+    [
+     16000,
+     0.034
+    ],
+    [
+     26400,
+     0.037
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0
+    ],
+    [
+     5600,
+     0.02
+    ],
+    [
+     11200,
+     0.03
+    ],
+    [
+     16000,
+     0.034
+    ],
+    [
+     26400,
+     0.037
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "No local income taxes in Arkansas.",
+  "usInterest": "Interest on U.S. obligations is exempt from Arkansas income tax (not included in Arkansas income on AR1000F). Exact form line not verified.",
+  "sourceUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf",
+  "sourceTitle": "State of Arkansas Withholding Tax Formula Method, Tax Year 2026 (revised, top rate 3.70%)",
+  "note": "Brackets are the 2026 DFA withholding formula brackets (net taxable income after the $2,470 standard deduction); the original Jan-2026 formula used 3.9% and was revised to 3.7% after 2026 legislation lowering the top rate retroactive to 2026-01-01. Arkansas has no separate joint schedule (each spouse computes on the same table), so joint = single. Above ~$94,700 of net income the 'minus adjustment' shrinks by $10 per $100 (a phase-out of the low brackets ending at $97,801), so marginal rate is briefly ~13.7% in that band and 3.7% above. The individual return tax tables for 2026 are not published yet; brackets taken from withholding formula.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "CA",
+  "name": "California",
+  "year": 2025,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.01
+    ],
+    [
+     11079,
+     0.02
+    ],
+    [
+     26264,
+     0.04
+    ],
+    [
+     41452,
+     0.06
+    ],
+    [
+     57542,
+     0.08
+    ],
+    [
+     72724,
+     0.093
+    ],
+    [
+     371479,
+     0.103
+    ],
+    [
+     445771,
+     0.113
+    ],
+    [
+     742953,
+     0.123
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.01
+    ],
+    [
+     22158,
+     0.02
+    ],
+    [
+     52528,
+     0.04
+    ],
+    [
+     82904,
+     0.06
+    ],
+    [
+     115084,
+     0.08
+    ],
+    [
+     145448,
+     0.093
+    ],
+    [
+     742958,
+     0.103
+    ],
+    [
+     891542,
+     0.113
+    ],
+    [
+     1485906,
+     0.123
+    ]
+   ]
+  },
+  "surtax": "Mental Health Services Tax: additional 1% on taxable income over $1,000,000 (all filing statuses), so top combined rate 13.3%.",
+  "local": "No city/county income tax reaches interest (San Francisco and others tax payroll/gross receipts of businesses only).",
+  "usInterest": "Interest on U.S. obligations (T-bills, notes, bonds) is subtracted on Schedule CA (540), Part I, Section B, line 2 (taxable interest), column B (subtractions). Line number from 2025 form layout, not re-verified.",
+  "sourceUrl": "https://www.ftb.ca.gov/forms/2025/2025-540-tax-rate-schedules.pdf",
+  "sourceTitle": "2025 California Tax Rate Schedules (FTB, Form 540 Personal Income Tax Booklet 2025)",
+  "note": "FTB has not yet published the 2026 indexed rate schedules (2026 page 404 as of 2026-10-19). The EDD 2026 Method B withholding schedules (https://edd.ca.gov/siteassets/files/pdf_pub_ctr/26methb.pdf) still use these same 2025 thresholds (rates x1.1). Thresholds will be inflation-indexed for 2026 later.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "CO",
+  "name": "Colorado",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.044
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.044
+    ]
+   ]
+  },
+  "surtax": "None. (The 2022 Prop 121 rate is 4.4%; a temporary TABOR-triggered rate reduction under C.R.S. 39-22-627 can apply for a given year, e.g. 4.25% for 2024.)",
+  "local": "Denver, Aurora, Glendale, Greenwood Village and Sheridan levy Occupational Privilege Taxes (fixed monthly amounts on employees/employers) - wages only, not interest.",
+  "usInterest": "Subtraction for interest on U.S. government obligations included in federal taxable income, on Form DR 0104AD (Subtractions from Income Schedule), 'U.S. government interest' line; see FYI Income 20.",
+  "sourceUrl": "https://tax.colorado.gov/DR1098",
+  "sourceTitle": "DR 1098 - 2026 Colorado Withholding Worksheet for Employers (line 2c: multiply by 4.40%)",
+  "note": "CDOR Individual Income Tax Guide (https://tax.colorado.gov/individual-income-tax-guide) lists rates through 2025 (4.4%); the 2026 withholding worksheet uses 4.40%. A temporary TABOR rate cut for 2026 cannot be ruled out until certified; none found.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "CT",
+  "name": "Connecticut",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.02
+    ],
+    [
+     10000,
+     0.045
+    ],
+    [
+     50000,
+     0.055
+    ],
+    [
+     100000,
+     0.06
+    ],
+    [
+     200000,
+     0.065
+    ],
+    [
+     250000,
+     0.069
+    ],
+    [
+     500000,
+     0.0699
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.02
+    ],
+    [
+     20000,
+     0.045
+    ],
+    [
+     100000,
+     0.055
+    ],
+    [
+     200000,
+     0.06
+    ],
+    [
+     400000,
+     0.065
+    ],
+    [
+     500000,
+     0.069
+    ],
+    [
+     1000000,
+     0.0699
+    ]
+   ]
+  },
+  "surtax": "No separate surtax, but the 2% bracket phases out (single: CT AGI over $56,500; joint threshold higher, not re-read) and benefit-recapture add-ons apply above CT AGI $105,000/$200,000/$500,000 single (higher thresholds for joint), raising the effective marginal rate in those ranges.",
+  "local": "No local income taxes in Connecticut.",
+  "usInterest": "Subtraction for interest on U.S. government obligations on Form CT-1040 Schedule 1 (modifications to federal AGI), C.G.S. 12-701(a)(20)(B). Exact line not re-verified.",
+  "sourceUrl": "https://www.cga.ct.gov/current/pub/chap_229.htm",
+  "sourceTitle": "Connecticut General Statutes Chapter 229, Sec. 12-700(a)(10) - rates for taxable years commencing on or after January 1, 2024",
+  "note": "Schedule in statute applies to 2024 and later; the 2026 Supplement (https://www.cga.ct.gov/2026/sup/chap_229.htm) does not amend Sec. 12-700. Joint phase-out threshold for the 2% bracket not re-read for joint filers (single = $56,500).",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "DE",
+  "name": "Delaware",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0
+    ],
+    [
+     2000,
+     0.022
+    ],
+    [
+     5000,
+     0.039
+    ],
+    [
+     10000,
+     0.048
+    ],
+    [
+     20000,
+     0.052
+    ],
+    [
+     25000,
+     0.0555
+    ],
+    [
+     60000,
+     0.066
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0
+    ],
+    [
+     2000,
+     0.022
+    ],
+    [
+     5000,
+     0.039
+    ],
+    [
+     10000,
+     0.048
+    ],
+    [
+     20000,
+     0.052
+    ],
+    [
+     25000,
+     0.0555
+    ],
+    [
+     60000,
+     0.066
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "City of Wilmington 1.25% earned income tax (wages and net profits only, not interest). No other local income taxes.",
+  "usInterest": "Interest on obligations of the United States is subtracted from federal AGI on the Delaware resident return (PIT-RES additions/subtractions section), 30 Del. C. 1106(b). Exact line not re-verified.",
+  "sourceUrl": "https://delcode.delaware.gov/title30/c011/sc01/index.html",
+  "sourceTitle": "Delaware Code Title 30, Chapter 11, Subchapter I, Sec. 1102(a)(14) - taxable years beginning after December 31, 2013",
+  "note": "Statutory schedule unchanged since 2014; same table for all filing statuses (married couples may file combined separate). HB 13 (153rd GA, proposing higher brackets above $125k/$150k) was not enacted per legis.delaware.gov (HS 2 still in committee).",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "DC",
+  "name": "District of Columbia",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.04
+    ],
+    [
+     10000,
+     0.06
+    ],
+    [
+     40000,
+     0.065
+    ],
+    [
+     60000,
+     0.085
+    ],
+    [
+     250000,
+     0.0925
+    ],
+    [
+     500000,
+     0.0975
+    ],
+    [
+     1000000,
+     0.1075
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.04
+    ],
+    [
+     10000,
+     0.06
+    ],
+    [
+     40000,
+     0.065
+    ],
+    [
+     60000,
+     0.085
+    ],
+    [
+     250000,
+     0.0925
+    ],
+    [
+     500000,
+     0.0975
+    ],
+    [
+     1000000,
+     0.1075
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "DC is a single jurisdiction; no separate local tax.",
+  "usInterest": "Interest on U.S. obligations is subtracted on Form D-40, Schedule I (subtractions from federal AGI). Exact line not re-verified.",
+  "sourceUrl": "https://otr.cfo.dc.gov/page/dc-individual-and-fiduciary-income-tax-rates",
+  "sourceTitle": "DC Office of Tax and Revenue - DC Individual and Fiduciary Income Tax Rates (tax years beginning after 12/31/2021)",
+  "note": "Same schedule for all filing statuses; not indexed.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "FL",
+  "name": "Florida",
+  "year": 2026,
+  "hasIncomeTax": false,
+  "taxesInterest": false,
+  "brackets": {
+   "single": [],
+   "joint": []
+  },
+  "surtax": null,
+  "local": "No local income taxes.",
+  "usInterest": "Not applicable: no individual income tax (intangible personal property tax repealed in 2007).",
+  "sourceUrl": "https://floridarevenue.com/taxes/taxesfees/Pages/default.aspx",
+  "sourceTitle": "Florida Department of Revenue - Taxes",
+  "note": "Florida Constitution Art. VII s.5 bars a personal income tax. Official page not re-fetched in this pass; status is long-standing.",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "GA",
+  "name": "Georgia",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.0499
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.0499
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "No local income taxes in Georgia.",
+  "usInterest": "Subtraction for interest on U.S. obligations on Form 500, Schedule 1 (adjustments to income). Exact line not re-verified.",
+  "sourceUrl": "https://dor.georgia.gov/taxes/important-tax-updates",
+  "sourceTitle": "Georgia Department of Revenue - Important Tax Updates ('The Georgia income tax rate has been reduced to a flat rate of 4.99%')",
+  "note": "2026 flat rate 4.99% (down from 5.19% in 2025) per GA DOR; 2026 standard deduction $15,000 single / $30,000 MFJ. Further scheduled cuts from 2027 per 2026 legislation (secondary sources).",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "HI",
+  "name": "Hawaii",
+  "year": 2026,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0.014
+    ],
+    [
+     9600,
+     0.032
+    ],
+    [
+     14400,
+     0.055
+    ],
+    [
+     19200,
+     0.064
+    ],
+    [
+     24000,
+     0.068
+    ],
+    [
+     36000,
+     0.072
+    ],
+    [
+     48000,
+     0.076
+    ],
+    [
+     125000,
+     0.079
+    ],
+    [
+     175000,
+     0.0825
+    ],
+    [
+     225000,
+     0.09
+    ],
+    [
+     275000,
+     0.1
+    ],
+    [
+     325000,
+     0.11
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0.014
+    ],
+    [
+     19200,
+     0.032
+    ],
+    [
+     28800,
+     0.055
+    ],
+    [
+     38400,
+     0.064
+    ],
+    [
+     48000,
+     0.068
+    ],
+    [
+     72000,
+     0.072
+    ],
+    [
+     96000,
+     0.076
+    ],
+    [
+     250000,
+     0.079
+    ],
+    [
+     350000,
+     0.0825
+    ],
+    [
+     450000,
+     0.09
+    ],
+    [
+     550000,
+     0.1
+    ],
+    [
+     650000,
+     0.11
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "No county income taxes in Hawaii.",
+  "usInterest": "Interest on federal obligations (incl. Treasury bills and notes) is subtracted on Form N-11 line 18 (Other Hawaii subtractions), via line a of the Hawaii Subtractions Worksheet (2025 N-11 instructions).",
+  "sourceUrl": "https://files.hawaii.gov/tax/news/announce/ann24-03.pdf",
+  "sourceTitle": "Hawaii Department of Taxation Announcement No. 2024-03 (Act 46, SLH 2024): 'For tax year 2026 ... The income tax brackets will be the same as in tax year 2025.'",
+  "note": "2025 brackets confirmed identical in the 2025 N-11 instructions (https://files.hawaii.gov/tax/forms/2025/n11ins.pdf). 2026 standard deduction $8,000 single / $16,000 joint. A 2026 act (SB 3125) adds a 13% rate over $1M starting tax year 2027, not 2026 (secondary source; not verified on capitol.hawaii.gov, which blocked access).",
+  "retrieved": "2026-10-19"
+ },
+ {
+  "code": "ID",
+  "name": "Idaho",
+  "year": 2025,
+  "hasIncomeTax": true,
+  "taxesInterest": true,
+  "brackets": {
+   "single": [
+    [
+     0,
+     0
+    ],
+    [
+     4811,
+     0.053
+    ]
+   ],
+   "joint": [
+    [
+     0,
+     0
+    ],
+    [
+     9622,
+     0.053
+    ]
+   ]
+  },
+  "surtax": null,
+  "local": "No local income taxes in Idaho.",
+  "usInterest": "Interest on U.S. government obligations is subtracted on Form 39R (Part B, subtractions from income). Exact line not re-verified.",
+  "sourceUrl": "https://tax.idaho.gov/taxes/income-tax/individual-income/individual-income-tax-rate-schedule/",
+  "sourceTitle": "Idaho State Tax Commission - Individual Income Tax Rate Schedule (Year 2025: single 0% to $4,811, 5.3% from $4,812; married 0% to $9,622, 5.3% from $9,623)",
+  "note": "tax.idaho.gov refused connections from this environment; page read via Wayback Machine capture of 2026-10-15 (page last updated 2025-12-29). The Tax Commission basics page says 'The income tax rate for 2025 is 5.3%'. No 2026 schedule published yet; 5.3% (HB 40, 2025) has no sunset, but 2026 zero-bracket thresholds will be inflation-indexed. No 2026 rate cut found.",
+  "retrieved": "2026-10-19"
+ }
+]

@@ -1,0 +1,13 @@
+{
+ "accent": "#1E4D6B",
+ "symbol": "SB",
+ "variants": [
+  {
+   "file": "og-en.png",
+   "title": "What your savings bond is worth,\nmonth by month",
+   "subtitle": "EE and I bonds · paper and electronic · T-bill yields by state",
+   "badge": "Treasury rules and rates, October 2026",
+   "brand": "BondWorth"
+  }
+ ]
+}

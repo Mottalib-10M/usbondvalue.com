@@ -1,0 +1,32 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME, AUTHOR_DESC, CONTACT_EMAIL } from '../../data/site-config';
+import { src } from '../../lib/helpers';
+import { KIT as K } from '../../lib/kit';
+import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('about', lang);
+const title = 'BondWorth in 2026: who builds these savings bond tools';
+const description = 'BondWorth is published by Radif Partners: savings bond and Treasury bill calculators built on the Treasury rules, with no e-mail asked and no bank behind.';
+const C = K.P.checks;
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path }])]} breadcrumbs={[{ label: 'About' }]}>
+  <article class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>About BondWorth</h1>
+    <p>{AUTHOR_DESC.en}</p>
+    <h2>The gap this site fills</h2>
+    <p>Many savings bonds still sit in drawers as paper bonds from a grandparent or a payroll plan, while every new bond is electronic: EE bonds since 2012, I bonds since January 1, 2025. The Treasury's own calculator values paper bonds only, one at a time, and stops at the end of the current rate period. Electronic bonds can be valued only by logging into the account that holds them, which an heir or a tax preparer often cannot do. News articles about I bond rates stay in search results for years after their rate has expired, and Treasury bill pages leave you to guess your state tax rate.</p>
+    <p>This site does better than the first Google result because its calculator gives the value of EE and I bonds, paper and electronic, month by month and checked against the Treasury's redemption tables, the current rate of each I bond by its issue month, and the yield of each Treasury bill converted into a taxable equivalent with your state's 2026 schedule, where the Treasury's tool handles paper bonds only and other pages ask you to type your state rate by hand.</p>
+    <h2>Who publishes it</h2>
+    <p>The site is published by {AUTHOR_NAME}, a company that builds calculators on public rules. It is not a bank, a broker, a dealer in securities, an investment adviser or a government agency, receives no commission and has no partner to send you to. Pages carry no affiliate link.</p>
+    <LegalIdentity lang={lang} />
+    <h2>What we rely on</h2>
+    <p>The regulations for Series EE and I bonds (<Fragment set:html={src('cfr_351', '31 CFR 351')} /> and <Fragment set:html={src('cfr_359', '31 CFR 359')} />), the TreasuryDirect rate tables and the Series I rate history, the {C.redemptionTables} monthly redemption tables published on Fiscal Data from {K.month(C.tablesFrom)} to {K.month(C.tablesTo)}, the Fiscal Data auction results for Treasury bills, the CPI-U published by the Bureau of Labor Statistics, IRS Publications 550 and 970, Form 8815, Rev. Proc. 2025-32, and the revenue department of each state and DC.</p>
+    <h2>What the site leaves out</h2>
+    <p>We cannot look up a bond by serial number, tell you whether a paper bond was already cashed, or find lost bonds: only the Treasury can. Rates that are not announced yet are left blank unless you ask for a projection, which is labeled. The <a href={route('method', lang)}>method page</a> lists every formula and its limits; the <a href={route('editorial', lang)}>editorial policy</a> explains corrections.</p>
+    <h2>Contact</h2>
+    <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, for corrections and sources. We answer questions about a rule, not about your personal situation.</p>
+  </article>
+</PageLayout>

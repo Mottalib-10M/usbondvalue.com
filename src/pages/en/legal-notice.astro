@@ -1,0 +1,31 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CLARITY_ID, CONTACT_EMAIL, GA4_ID, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`${SITE_NAMES[lang]} legal notice: publisher, host and terms of use 2026`} description="Publisher and host of BondWorth, an independent site not affiliated with the U.S. Treasury or the IRS; calculations are general information, not financial or tax advice." lang={lang} noindex={true} breadcrumbs={[{ label: 'Legal notice' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Legal notice and terms of use</h1>
+    <p>Information given under Article 6 III-1 of French law no. 2004-575 of 21 June 2004, the publisher being established in France.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Publication director: {AUTHOR_NAME}, responsible for the content of {SITE_URL}.</p>
+    <h2>Host</h2>
+    <LegalIdentity mode="hosting" lang={lang} />
+    <h2>Independent site</h2>
+    <p>{SITE_NAMES[lang]} is a private publication. It is not run, endorsed or paid for by the U.S. Department of the Treasury, the Bureau of the Fiscal Service, TreasuryDirect, the Internal Revenue Service, a state government, a bank, a broker or a financial adviser.</p>
+    <h2>General information, not advice</h2>
+    <p>The pages describe federal and state rules and the calculators apply them to the figures you type. Nothing here is personal financial, tax, legal or investment advice, or a recommendation to buy, keep or cash a bond or a bill. The amount the Treasury or your bank pays for a bond is the one that counts; a tax professional can confirm what applies to your return.</p>
+    <h2>Liability</h2><p>Rules and rates are read on official texts and the calculators are tested before each release, but rules change and errors cannot be excluded. The publisher is not liable for a decision taken on the basis of the site alone. Errors can be reported through the <a href={route('contact', lang)}>contact page</a>.</p>
+    <h2>Intellectual property</h2><p>Texts, design and code belong to the publisher; short quotations with a link are welcome. Federal government texts quoted here are in the public domain.</p>
+    <h2>Embedding</h2><p>The savings bond calculator may be embedded for free with its credit line visible: see the <a href={route('widget', lang)}>embed page</a>.</p>
+    {/* gen-legal-pages:terms */}
+    <h2>Personal data and cookies</h2>
+    {GA4_ID ? (<p>What you type in the calculators stays in your browser. The site sets Google Analytics audience measurement cookies (<code>_ga</code>, <code>_ga_{GA4_ID.replace('G-', '')}</code>, 13 months at most), with no advertising{CLARITY_ID && '; page stability is monitored with Microsoft Clarity, cookie-free'}. Details, legal basis and how to object: <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a> page.</p>) : (<p>What you type in the calculators stays in your browser and the site sets no cookies{CLARITY_ID && '; page stability is monitored anonymously with Microsoft Clarity, cookie-free'}. See the <a href={route('privacy', lang)}>privacy policy</a> and the <a href={route('cookies', lang)}>cookies</a> page.</p>)}
+    {/* /gen-legal-pages:terms */}
+    <h2>Reporting unlawful content</h2><p>Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with the page address.</p>
+    <h2>Governing law</h2><p>French law applies; failing an amicable settlement, the courts of {LEGAL.jurisdiction} have jurisdiction. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,109 @@
+Savings Bonds
+ Tax information for EE and I bonds
+ Note: The tax situation is different for HH bonds, which may still be earning interest.
+ Tax information for HH savings bonds 
+ Is savings bond interest taxable?
+ The interest that your savings bonds earn is subject to
+ federal income tax, but not state or local income tax
+ any federal estate, gift, and excise taxes and any state estate or inheritance taxes
+ Using the money for higher education may keep you from paying federal income tax on your savings bond
+ interest. See the possibilities and restrictions for using savings
+ bonds for education. 
+ When do I get the interest on my EE or I bonds?
+ Your EE and I savings bonds earn interest from the first month you own them. You get the interest all at
+ once. For a paper bond, this happens when you cash the bond. For an electronic bond, it happens either
+ when you cash the bond or when the bond finishes its 30-year life (it matures ). When an
+ electronic bond matures, we put the money into the Certificate of Indebtedness in your TreasuryDirect
+ account. 
+ When must I report the interest?
+ You have a choice. You can
+ put off (defer) reporting the interest until you file a federal income tax return for the year in
+ which you actually get the interest, or
+ report the interest each year even though you don't actually get the interest then
+ Deferring until you get the interest
+ Most people put off reporting the interest until they actually get it.
+ You get a Form 1099-INT for the year in which you get the interest. (INT stands for "interest." The
+ 1099-INT tells you how much interest the bond earned.)
+ If a financial institution pays the bond, you get a 1099-INT from that financial institution either
+ soon after you cash your bond or by January 31 of the following year.
+ If your bonds are in your TreasuryDirect account, your 1099-INT is available in your account by
+ January 31 of the following year.
+ Go to your TreasuryDirect account.
+ Select the ManageDirect tab.
+ Under "Manage My Taxes", choose the relevant year.
+ Near the top of your "Taxable Transaction Summary", choose the link to view your 1099.
+ Video 
+ NOTE: Your "Taxable Transaction Summary" is NOT your 1099.
+ Reporting the interest every year
+ You may choose to report the interest every year. For example, you may find it advantageous to report
+ interest every year on savings bonds in a child's name. The child may be paying taxes at a lower rate
+ than will be true years later when the bond matures.
+ But you will not get a 1099-INT every year. You only get a 1099-INT at the end.
+ If the savings bonds are in a TreasuryDirect account, you can see the interest earned each year in
+ the account.
+ If the savings bonds are on paper, our Savings
+ Bond Calculator can help you figure out the interest to report.
+ When you get the 1099-INT at the end, it will show all the interest the bond earned over the years. For
+ instructions on how to tell the IRS that you already reported some or all of that interest in earlier
+ years, go to IRS Publication 550 and look for the section on U.S.
+ Savings Bonds.
+ Changing from one method to the other
+ You can change from one reporting method to the other.
+ You were deferring. You now want to report every year.
+ You may do this without permission from the IRS.
+ But you must do this for all the savings bonds for the Social Security Number whose tax return
+ this is. In addition to the interest for the year you are now reporting, you must also report
+ all interest those bonds earned in the years before you changed.
+ You were reporting each year. You now want to defer the interest.
+ You must fill out IRS Form 3115 or follow the instructions in
+ IRS
+ Publication 550 in the section on U.S. Savings Bonds
+ Where do I list the interest on my tax return?
+ Interest from your bonds goes on your federal income tax return on the same line with other interest
+ income.
+ If you are reporting the interest on bonds another person owns (for example, the interest on your child's
+ bonds), you report that on the other person's federal income tax return with other interest income that
+ person has earned.
+ Who owes the tax?
+ If ownership has not changed
+ Situation 
+ Who owes the tax 
+ You are the only owner of the bond 
+ You owe the tax 
+ You use your money to buy a bond that you put in your name with a co-owner 
+ You owe the tax 
+ You buy the bond but someone else is named as the only owner (for example, your child) 
+ The person who is named as the owner (not you) 
+ You and another person buy a bond together, each putting in part of the money to buy the bond,
+ and you are both named as co-owners
+ You and the other person must each report the interest in proportion to how much you each paid
+ for the bond
+ You and your spouse live in a community property state and buy a bond that is community property
+ and you file separate federal income tax returns
+ You and your spouse each report one-half of the interest 
+ If ownership changes
+ Situation 
+ Who owes the tax 
+ You give up ownership of the bond.
+ We reissue the bond.
+ You owe tax on the interest the bond earned until it was reissued. 
+ You are the new owner of a reissued bond. 
+ You owe tax on the interest the bond earns after it was reissued. 
+ For electronic savings bonds in TreasuryDirect
+ When we reissue the bond, we report the total interest the bond earned so far on a 1099-INT in the
+ name and Social Security Number of the person being removed (the previous owner).
+ When the new owner later cashes in the bond or the bond matures, we report the interest in the name
+ and Social Security Number of the person being paid (the new owner). However, we report only the
+ interest earned after we reissued the bond.
+ Therefore, whether you are the old owner or the new owner of an electronic savings bond, your 1099-INT
+ will reflect the interest you earned on your EE or I savings bonds.
+ For paper savings bonds
+ The 1099-INT will only come when someone cashes the bond or the bond matures. The interest will be
+ reported under the name and Social Security Number of the person who cashes the bond or who owns it when
+ it matures. The 1099-INT will include all the interest the bond earned over its lifetime. If you are the
+ new owner who gets that 1099-INT, you must prove to the IRS that a portion of the interest was
+ previously reported to a different owner.
+ For instructions on how to pay tax only on the interest that you owe (the interest the bond has earned
+ since you became the bond owner), see IRS Publication 550 .
+ More about reissuing EE or I
+ savings bonds

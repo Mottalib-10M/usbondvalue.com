@@ -1,0 +1,446 @@
+{
+  "_lisezmoi": "Paramètres légaux du site, jamais en dur dans le code (RECETTE-SITE.md §4). Taux des bonds : src/data/rates.json (scripts/data/build-rates.py) ; enchères : src/data/auctions.json (scripts/data/build-auctions.mjs) ; barèmes d'État : src/data/states.json. Le 1er novembre 2026 : remplir nextIBond.fixed et nextIBond.inflation, relancer build-rates.py (CONTRIBUTING-DONNEES.md).",
+  "year": 2026,
+  "retrieved_at": "2026-10-19",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "sources": {
+    "td_ibond_rates": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/i-bonds-interest-rates/",
+      "label": {
+        "en": "TreasuryDirect, I bonds interest rates (May 2026 to October 2026 announcement)"
+      }
+    },
+    "td_ibond_history": {
+      "url": "https://www.treasurydirect.gov/files/savings-bonds/series-i-ussb-interest-rate-history.xlsx",
+      "label": {
+        "en": "TreasuryDirect, Series I savings bond interest rate history (workbook)"
+      }
+    },
+    "td_ibonds": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/",
+      "label": {
+        "en": "TreasuryDirect, I bonds"
+      }
+    },
+    "td_eebonds": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/ee-bonds/",
+      "label": {
+        "en": "TreasuryDirect, EE bonds"
+      }
+    },
+    "td_ee2005": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/ee-bonds/may-2005-and-later/",
+      "label": {
+        "en": "TreasuryDirect, EE bonds issued May 2005 and later: rates"
+      }
+    },
+    "td_ee1997": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/ee-bonds/may-1997-through-april-2005/",
+      "label": {
+        "en": "TreasuryDirect, EE bonds issued May 1997 through April 2005: rates"
+      }
+    },
+    "td_ee1995": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/ee-bonds/may-1995-through-april-1997/",
+      "label": {
+        "en": "TreasuryDirect, EE bonds issued May 1995 through April 1997: rates"
+      }
+    },
+    "td_ee1980": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/ee-bonds/1980-through-1995/",
+      "label": {
+        "en": "TreasuryDirect, EE bonds issued 1980 through April 1995"
+      }
+    },
+    "td_compare": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/comparing-ee-and-i-bonds/",
+      "label": {
+        "en": "TreasuryDirect, Comparing EE and I bonds"
+      }
+    },
+    "td_limits": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/how-much-can-i-spend-own/",
+      "label": {
+        "en": "TreasuryDirect, How much can I spend on savings bonds?"
+      }
+    },
+    "td_buy": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/buy-a-bond/",
+      "label": {
+        "en": "TreasuryDirect, Buying savings bonds"
+      }
+    },
+    "td_gift": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/gift-a-bond/",
+      "label": {
+        "en": "TreasuryDirect, Giving savings bonds as gifts"
+      }
+    },
+    "td_cashing": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/cashing-a-bond/",
+      "label": {
+        "en": "TreasuryDirect, Cashing savings bonds"
+      }
+    },
+    "td_oldseries": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/cashing-a-bond/old-bonds-from-other-series/",
+      "label": {
+        "en": "TreasuryDirect, Cashing old bonds from other series"
+      }
+    },
+    "td_hh": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/hh-bonds/",
+      "label": {
+        "en": "TreasuryDirect, HH bonds"
+      }
+    },
+    "td_retired": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/historical-retired-bonds/",
+      "label": {
+        "en": "TreasuryDirect, Historical and retired savings bonds (Series A to K, savings notes)"
+      }
+    },
+    "td_convert": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/manage-bonds/convert-paper-to-electronic/",
+      "label": {
+        "en": "TreasuryDirect, Converting EE or I paper bonds to electronic bonds"
+      }
+    },
+    "td_death": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/manage-bonds/death-of-owner/",
+      "label": {
+        "en": "TreasuryDirect, Death of a savings bond owner"
+      }
+    },
+    "td_tax": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/tax-information-ee-i-bonds/",
+      "label": {
+        "en": "TreasuryDirect, Tax information for EE and I bonds"
+      }
+    },
+    "td_education": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/tax-information-ee-i-bonds/using-bonds-for-higher-education/",
+      "label": {
+        "en": "TreasuryDirect, Using bonds for higher education"
+      }
+    },
+    "td_calc": {
+      "url": "https://www.treasurydirect.gov/savings-bonds/savings-bond-calculator/",
+      "label": {
+        "en": "TreasuryDirect, Savings Bond Calculator (paper bonds only)"
+      }
+    },
+    "td_form1522": {
+      "url": "https://www.treasurydirect.gov/forms/sav1522.pdf",
+      "label": {
+        "en": "FS Form 1522, Special Form of Request for Payment of United States Savings and Retirement Securities"
+      }
+    },
+    "td_tbills": {
+      "url": "https://www.treasurydirect.gov/marketable-securities/treasury-bills/",
+      "label": {
+        "en": "TreasuryDirect, Treasury Bills"
+      }
+    },
+    "td_pricing": {
+      "url": "https://www.treasurydirect.gov/marketable-securities/understanding-pricing/",
+      "label": {
+        "en": "TreasuryDirect, Understanding pricing and interest rates"
+      }
+    },
+    "cfr_351": {
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/subchapter-A/part-351",
+      "label": {
+        "en": "31 CFR Part 351, Offering of United States Savings Bonds, Series EE"
+      }
+    },
+    "cfr_359": {
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/subchapter-A/part-359",
+      "label": {
+        "en": "31 CFR Part 359, Offering of United States Savings Bonds, Series I"
+      }
+    },
+    "usc_3124": {
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section3124&num=0&edition=prelim",
+      "label": {
+        "en": "31 U.S.C. 3124, Exemption from taxation of United States obligations"
+      }
+    },
+    "fd_redemption": {
+      "url": "https://fiscaldata.treasury.gov/datasets/redemption-tables/",
+      "label": {
+        "en": "Fiscal Data, Savings bonds redemption tables (1999 to 2023)"
+      }
+    },
+    "fd_auctions": {
+      "url": "https://fiscaldata.treasury.gov/datasets/treasury-securities-auctions-data/",
+      "label": {
+        "en": "Fiscal Data, Treasury securities auctions data"
+      }
+    },
+    "bls_cpi": {
+      "url": "https://data.bls.gov/timeseries/CUUR0000SA0",
+      "label": {
+        "en": "Bureau of Labor Statistics, CPI-U, all items, U.S. city average, not seasonally adjusted (CUUR0000SA0)"
+      }
+    },
+    "irs_rp_2025_32": {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "label": {
+        "en": "IRS Rev. Proc. 2025-32, 2026 inflation adjustments"
+      }
+    },
+    "irs_p550": {
+      "url": "https://www.irs.gov/publications/p550",
+      "label": {
+        "en": "IRS Publication 550, Investment Income and Expenses"
+      }
+    },
+    "irs_p970": {
+      "url": "https://www.irs.gov/publications/p970",
+      "label": {
+        "en": "IRS Publication 970, Tax Benefits for Education"
+      }
+    },
+    "irs_f8815": {
+      "url": "https://www.irs.gov/forms-pubs/about-form-8815",
+      "label": {
+        "en": "IRS, About Form 8815, Exclusion of Interest From Series EE and I U.S. Savings Bonds Issued After 1989"
+      }
+    }
+  },
+  "bonds": {
+    "_source": "cfr_351, cfr_359, td_limits, td_cashing, td_compare",
+    "iUnit": 25,
+    "eeUnit": 12.5,
+    "eeFaceUnit": 25,
+    "minHoldMonths": 12,
+    "minHoldMonthsBeforeFeb2003": 6,
+    "penaltyMonths": 3,
+    "penaltyUntilMonths": 60,
+    "finalMaturityMonths": 360,
+    "eeDoublingMonths": 240,
+    "electronicMin": 25,
+    "paperDenominationsEE": [
+      50,
+      75,
+      100,
+      200,
+      500,
+      1000,
+      5000,
+      10000
+    ],
+    "paperDenominationsI": [
+      50,
+      75,
+      100,
+      200,
+      500,
+      1000,
+      5000
+    ],
+    "annualLimitElectronicEE": 10000,
+    "annualLimitElectronicI": 10000,
+    "signatureCertificationOver": 1000,
+    "estateCourtThreshold": 100000,
+    "hhLastMaturity": "2024-08"
+  },
+  "nextIBond": {
+    "_source": "td_ibond_rates, bls_cpi, cfr_359 (§359.11 to §359.13)",
+    "_note": "Le 1er novembre 2026 : recopier ici le taux fixe et la part d'inflation annoncés par le Trésor, puis relancer scripts/data/build-rates.py et npm run build. Tant que fixed est null, le site écrit « announced November 1, 2026 ».",
+    "date": "2026-11-01",
+    "periodFrom": "2026-11",
+    "fixed": null,
+    "inflation": null,
+    "cpiMarch": 330.213,
+    "cpiSeptember": 336.94,
+    "cpiSeptemberReleased": "2026-10-15"
+  },
+  "tbills": {
+    "_source": "td_tbills, td_pricing, fd_auctions",
+    "terms": [
+      "4-Week",
+      "6-Week",
+      "8-Week",
+      "13-Week",
+      "17-Week",
+      "26-Week",
+      "52-Week"
+    ],
+    "termDays": {
+      "4-Week": 28,
+      "6-Week": 42,
+      "8-Week": 56,
+      "13-Week": 91,
+      "17-Week": 119,
+      "26-Week": 182,
+      "52-Week": 364
+    },
+    "minimum": 100,
+    "increment": 100,
+    "maxNoncompetitive": 10000000
+  },
+  "tax": {
+    "_source": "irs_rp_2025_32",
+    "brackets": {
+      "single": [
+        [
+          0,
+          0.1
+        ],
+        [
+          12400,
+          0.12
+        ],
+        [
+          50400,
+          0.22
+        ],
+        [
+          105700,
+          0.24
+        ],
+        [
+          201775,
+          0.32
+        ],
+        [
+          256225,
+          0.35
+        ],
+        [
+          640600,
+          0.37
+        ]
+      ],
+      "joint": [
+        [
+          0,
+          0.1
+        ],
+        [
+          24800,
+          0.12
+        ],
+        [
+          100800,
+          0.22
+        ],
+        [
+          211400,
+          0.24
+        ],
+        [
+          403550,
+          0.32
+        ],
+        [
+          512450,
+          0.35
+        ],
+        [
+          768700,
+          0.37
+        ]
+      ],
+      "head": [
+        [
+          0,
+          0.1
+        ],
+        [
+          17700,
+          0.12
+        ],
+        [
+          67450,
+          0.22
+        ],
+        [
+          105700,
+          0.24
+        ],
+        [
+          201750,
+          0.32
+        ],
+        [
+          256200,
+          0.35
+        ],
+        [
+          640600,
+          0.37
+        ]
+      ]
+    },
+    "standardDeduction": {
+      "single": 16100,
+      "joint": 32200,
+      "head": 24150
+    },
+    "p550Example": {
+      "_source": "irs_p550",
+      "issued": "2006-03",
+      "price": 500,
+      "redeemed": "2025-03",
+      "proceeds": 913.6
+    },
+    "p550Decedent": {
+      "_source": "irs_p550",
+      "face": 1000,
+      "price": 500,
+      "valueAtDeath": 700,
+      "valueCashed": 1000
+    }
+  },
+  "checks": {
+    "_source": "tests/oracle.test.ts, tests/tbill.test.ts (npx vitest run)",
+    "redemptionTables": 291,
+    "redemptionValues": 93786,
+    "issueMonths": 610,
+    "tablesFrom": "1999-03",
+    "tablesTo": "2023-05",
+    "auctions": 652,
+    "auctionsFrom": "2023-01",
+    "auctionsTo": "2024-12"
+  },
+  "education": {
+    "_source": "irs_p970, irs_f8815, td_education",
+    "minOwnerAge": 24,
+    "firstIssueYearEE": 1990,
+    "phaseOut": {
+      "2026": {
+        "other": [
+          101800,
+          116800
+        ],
+        "joint": [
+          152650,
+          182650
+        ]
+      },
+      "2025": {
+        "other": [
+          99500,
+          114500
+        ],
+        "joint": [
+          149250,
+          179250
+        ]
+      }
+    },
+    "p970Example": {
+      "year": "2025",
+      "status": "joint",
+      "proceeds": 9000,
+      "interest": 3000,
+      "expenses": 7650,
+      "magi": 90000,
+      "excludable": 2550
+    }
+  }
+}

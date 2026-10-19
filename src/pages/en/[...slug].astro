@@ -1,0 +1,14 @@
+---
+/** Every topic page (src/content/guides) and state page (src/content/states). */
+import ContentPage from '../../components/ContentPage.astro';
+import StatePage from '../../components/StatePage.astro';
+import { GUIDES, STATE_PAGES } from '../../lib/pages';
+export function getStaticPaths() {
+  return [
+    ...GUIDES.map((page) => ({ params: { slug: page.slug }, props: { kind: 'g', def: page } })),
+    ...STATE_PAGES.map((def) => ({ params: { slug: `t-bill-state-tax/${def.slug}` }, props: { kind: 's', def } })),
+  ];
+}
+const { kind, def } = Astro.props as { kind: 'g' | 's'; def: any };
+---
+{kind === 'g' ? <ContentPage page={def} /> : <StatePage def={def} />}

@@ -1,0 +1,61 @@
+---
+/**
+ * Home, in its own order: the bond value calculator first, then this period's four rates on one
+ * line, the folded answer, the rate every I bond earns this month by issue date, why the official
+ * calculator falls short, the pages by family, long text in accordions, FAQ. Text: src/content/home.ts.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Clamp from './Clamp.astro';
+import Tool from './Tool.astro';
+import { HOME } from '../content/home';
+import { route, ROUTES } from '../i18n/routes';
+import { GROUPS } from '../i18n/nav';
+import { helpers, SOURCES, table } from '../lib/helpers';
+import { GUIDES } from '../lib/pages';
+import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+const lang = 'en';
+const x = HOME;
+const path = route('home', lang);
+const h = helpers();
+const sources = x.sources.map((k) => ({ name: SOURCES[k].label, url: SOURCES[k].url }));
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(x.faqs, lang)];
+const has = (id: string) => ROUTES.some((r) => r.id === id);
+---
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={x.faqs} sources={sources}>
+  <header class="mb-4">
+    <h1 class="font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{x.h1}</h1>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">{x.intro}</p>
+  </header>
+  <div data-outil data-chrome><Tool kind="bond" idPrefix="home" /></div>
+  <p class="mt-3 text-sm text-navy-600">{x.trust} · <a href={route('method', lang)} class="underline">How we calculate</a> · <a href={route('about', lang)} class="underline">Who publishes this</a></p>
+  <section data-chrome class="my-6 grid gap-px overflow-hidden rounded-lg border border-navy-200 bg-navy-200 sm:grid-cols-2 lg:grid-cols-4" aria-label="Rates this period">
+    {x.strip.map((c) => (
+      <div class="bg-white p-4">
+        <p class="text-xs font-medium uppercase tracking-wide text-navy-600">{c.k}</p>
+        <p class="tabular-nums mt-1 font-serif text-2xl font-bold text-navy-900">{c.v}</p>
+        <p class="mt-1 text-sm text-navy-700">{c.d}{has(c.id) && <> <a href={route(c.id, lang)} class="text-accent-700 underline">{c.l}</a></>}</p>
+      </div>
+    ))}
+  </section>
+  <Clamp text={x.resume} lang={lang} id="clamp-home" class="my-8" />
+  <section class="my-10">
+    <h2 class="font-serif text-2xl font-bold text-navy-900">{x.cohortTitle}</h2>
+    <p class="mt-2 text-navy-700">{x.cohortIntro}</p>
+    <Fragment set:html={table(x.cohortHead, x.cohortRows, x.cohortCaption, ['l', 'r', 'r'])} />
+  </section>
+  <section class="prose prose-slate max-w-none prose-headings:font-serif"><Fragment set:html={x.why(h)} /></section>
+  <section class="mt-10" data-chrome>
+    {GROUPS.map((g) => (
+      <div class="mb-6">
+        <h2 class="font-serif text-xl font-bold text-navy-900">{g.label}</h2>
+        <ul class="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
+          {GUIDES.filter((p) => p.group === g.id).map((p) => <li><a href={route(p.id, lang)} class="font-medium text-accent-700 underline-offset-2 hover:underline">{p.nav}</a><span class="block text-navy-600">{p.card}</span></li>)}
+        </ul>
+      </div>
+    ))}
+  </section>
+  <section class="mt-10">
+    <h2 class="font-serif text-2xl font-bold text-navy-900">Before you cash a bond</h2>
+    {x.sections(h).map((s) => <details class="fold"><summary><h3 class="fold-h">{s.title}</h3></summary><div class="prose prose-slate max-w-none pb-4"><Fragment set:html={s.html} /></div></details>)}
+  </section>
+</PageLayout>

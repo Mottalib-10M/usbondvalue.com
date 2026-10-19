@@ -1,0 +1,21 @@
+{
+ "name": "BondWorth",
+ "short_name": "BondWorth",
+ "description": "Savings bond value for paper and electronic EE and I bonds month by month, the current rate of every I bond, and T-bill yields with the tax-equivalent for your state.",
+ "start_url": "/en/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#1E4D6B",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}

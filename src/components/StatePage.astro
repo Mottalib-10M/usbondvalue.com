@@ -1,0 +1,42 @@
+---
+/** A state page: the state calculator first, the folded answer, the state's rules as read, the body, FAQ, sources. */
+import PageLayout from '../layouts/PageLayout.astro';
+import Clamp from './Clamp.astro';
+import Tool from './Tool.astro';
+import Body from './Body.astro';
+import { route, ROUTES } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { guideById, statePageById, stateId } from '../lib/pages';
+import { helpers, SOURCES } from '../lib/helpers';
+import { STATES } from '../lib/engine/states';
+import { articleSchema, faqSchema, breadcrumbSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { AUTHOR_NAME } from '../data/site-config';
+import type { StateDef } from '../lib/page-types';
+interface Props { def: StateDef }
+const { def } = Astro.props;
+const lang = 'en';
+const ui = t(lang);
+const st = STATES[def.slug];
+const id = stateId(def.slug);
+const path = route(id, lang);
+const h1 = `T-bills and savings bonds in ${st.name}: the tax-equivalent yield`;
+const parent = 't-bill-state-tax';
+const jsonLd = [webApplicationSchema({ name: h1, description: def.description, path, lang }), articleSchema({ title: h1, description: def.description, path, lang }), webPageSchema({ name: h1, description: def.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: label(parent), path: route(parent, lang) }, { name: st.name, path }])];
+if (def.faqs.length) jsonLd.push(faqSchema(def.faqs, lang));
+const card = (x: string) => guideById(x)?.card ?? (statePageById(x) ? `Tax-equivalent yield with the ${STATES[statePageById(x)!.slug].name} schedule` : '');
+const related = def.related.filter((x) => ROUTES.some((r) => r.id === x)).map((x) => ({ href: route(x, lang), name: label(x), description: card(x) }));
+const sources = [{ name: st.sourceTitle, url: st.sourceUrl }, ...(st.extraSources ?? []).map((x) => ({ name: x.title, url: x.url })), { name: SOURCES.usc_3124.label, url: SOURCES.usc_3124.url }, { name: SOURCES.fd_auctions.label, url: SOURCES.fd_auctions.url }];
+---
+<PageLayout title={def.title} description={def.description} lang={lang} jsonLd={jsonLd} faqs={def.faqs} related={related} sources={sources} breadcrumbs={[{ label: label(parent) }, { label: st.name }]}>
+  <article>
+    <header class="mb-4">
+      <h1 class="font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{h1}</h1>
+      <p class="mt-2 text-base text-navy-700 sm:text-lg">{def.intro}</p>
+    </header>
+    <div data-outil data-chrome class="mb-4"><Tool kind="teq" arg={{ sx: def.slug, ...(def.toolArg ?? {}) }} idPrefix={`s-${st.code}`} /></div>
+    <p class="mb-6 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('method', lang)} class="underline hover:text-navy-900">{label('method')}</a> · schedule read on the {st.name} revenue department site, tax year {st.year}</p>
+    <Clamp text={def.resume} lang={lang} id={`clamp-${def.slug}`} class="mb-8" />
+    <Body html={def.body(helpers())} path={path} />
+  </article>
+</PageLayout>

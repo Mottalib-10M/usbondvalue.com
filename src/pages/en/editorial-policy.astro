@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME, REVIEW_CYCLE_MONTHS } from '../../data/site-config';
+const lang = 'en';
+---
+<PageLayout title="Editorial policy of BondWorth: Treasury texts, dated rates, fixes" description="How BondWorth writes its savings bond and T-bill pages: Treasury and IRS texts only, every rate read from a data file, projections labeled, no money from banks or brokers." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Editorial policy</h1>
+    <h2>What counts as a source</h2>
+    <p>Valuation rules come from the regulations that govern each series, 31 CFR parts 351 (Series EE) and 359 (Series I), and from the Treasury's pages on TreasuryDirect. Rates come from the TreasuryDirect rate tables and the Series I rate history workbook; bill yields from the auction results that the Treasury publishes on Fiscal Data; inflation figures from the Bureau of Labor Statistics. Federal tax rules come from IRS Publications 550 and 970, Form 8815 and Rev. Proc. 2025-32; state schedules from each state's revenue department. Blogs, forums and bank articles are read to know what people ask, never as a source of a number.</p>
+    <h2>How a figure reaches a page</h2>
+    <p>No amount is typed into the text. Data files hold each rate and rule with its source and the date it was read; the calculators and the pages read those files. The Treasury's redemption tables from 1999 to 2023 (93,786 values), 652 Treasury bill auctions and the worked examples of the regulations and IRS publications are automated tests: if the engine or a figure drifts, the site does not build.</p>
+    <h2>Assumptions are labeled</h2>
+    <p>A rate the Treasury has not announced is never shown as a value. When you ask for a month beyond the announced rates, the calculator leaves it blank or, if you choose, projects it at the current rate with the word projection next to it. We do not forecast inflation, auction results or the next fixed rate.</p>
+    <h2>Independence</h2>
+    <p>{AUTHOR_NAME} receives nothing from banks, brokers, advisers or bond dealers and links to none of them. There is no advertising today; if some is added it will be labeled, limited to three places a page, and never come from a firm selling deposits, bonds or advice.</p>
+    <h2>Review and corrections</h2>
+    <p>The site is reviewed at least every {REVIEW_CYCLE_MONTHS} months, and on May 1 and November 1 when the Treasury announces savings bond rates, each week as bill auctions settle, and when the IRS publishes the next year's brackets (October and November). A reported error is checked against the source and, once fixed, moves the date shown on the page. Write through the <a href={route('contact', lang)}>contact page</a>; the calculations are explained on the <a href={route('method', lang)}>method page</a>.</p>
+  </div>
+</PageLayout>
