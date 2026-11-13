@@ -45,7 +45,7 @@ ${h.table(['County', '2026 local rate'], countyRows, 'Maryland local income tax 
 <p>In Anne Arundel and Frederick the county rate depends on income, so enter the rate of the county bracket your taxable income falls in, as listed in the Comptroller's worksheet. Nonresidents who earn Maryland income pay a special nonresident tax instead of a county tax, a case this page does not cover.</p>
 <p>The difference between the cheapest and the dearest county is ${rp(LR.max - LR.min)}. On ${K.usd(10000)} of CD interest at the bill's yield, that alone is ${K.usd2(spread)} a year.</p>
 
-<h2>Ocean City against Chestertown</h2>
+<h2>The tax-equivalent yield in Ocean City and in Chestertown</h2>
 <p>Move the single filer from the summary to Ocean City in Worcester County: the state takes ${rp(ocean.s)}, the county ${rp(ocean.c)}, and the break-even CD rate falls to ${K.pct(ocean.eq, 3)}. A married couple in Chestertown, Kent County, with ${K.usd(320000)} of joint taxable income pays ${rp(kent.s)} to the state and ${rp(kent.c)} to the county, with a ${K.pct(kent.f, 0)} federal rate. For them the CD must pay ${K.pct(kent.eq, 3)}, and ${K.usd(10000)} in T-bills avoids ${K.usd2(kent.saved)} a year. Try your own county rate in the small calculator.</p>
 ${h.mini('teq', { t: 'Your Maryland county rate and the T-bill', p: ['loc', 'inc'], d: { sx: SL, loc: asField(LR.max), inc: 250000 } })}
 

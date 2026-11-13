@@ -39,7 +39,7 @@ ${h.table(['Rate', 'Taxable income from', 'Up to'], rows, `District of Columbia 
 <h2>The long ${rp(sg[k85][1])} band</h2>
 <p>Between ${K.usd(band[0])} and ${K.usd(band[1])} of taxable income the District rate does not move. Lawyers, federal contractors and couples with two government salaries often fall inside it. For such a household, ${K.usd(cash)} held for a year in a savings account paying the bill's yield of ${K.pct(y, 3)} would cost ${K.usd2(cash * y * sg[k85][1])} in District tax. Held in Treasury bills at the same yield, it costs nothing in District tax, and the federal tax is the same in both cases.</p>
 
-<h2>A Capitol Hill couple and a K Street partner</h2>
+<h2>The tax-equivalent yield for a Capitol Hill couple and a K Street partner</h2>
 <p>A married couple on Capitol Hill with ${K.usd(120000)} of joint taxable income is in the ${rp(pair.s)} District bracket and the ${K.pct(pair.f, 0)} federal one. To match the 26-week bill, their savings account would have to pay ${K.pct(pair.eq, 3)}, and ${K.usd(10000)} in bills saves ${K.usd2(pair.saved)} a year. A single law firm partner with ${K.usd(1200000)} of taxable income who holds 52-week bills, last auctioned on ${K.day(b52.auction)} at ${K.pct(b52.investment / 100, 3)}, pays the top ${rp(big.s)} and ${K.pct(big.f, 0)} federally. The CD that equals his bill must pay ${K.pct(big.eq, 3)}; each ${K.usd(10000)} saves ${K.usd2(big.saved)} of District tax.</p>
 
 <h2>Itemizing changes the arithmetic</h2>

@@ -53,7 +53,7 @@ export default defineGuide({
 ${h.table(['Month', ...TERMS4.map((t) => K.termLabel(t))], rows, `Average of the high investment rates of each month's regular bill auctions. Source: Fiscal Data, Treasury securities auctions data, read ${K.day(K.A.built)}.`, ['l', 'r', 'r', 'r', 'r'])}
 <p>A month's figure for the 13-week bill is the mean of four or five weekly auctions, so it smooths the week-to-week moves that the auction results themselves show. The calculator at the top gives the exact result of the latest auction of any term.</p>
 
-<h2>Range of each term over the period</h2>
+<h2>Range of bill rates in each term over the period</h2>
 ${h.table(['Term', 'Auctions', 'Lowest', 'Highest', 'Latest'], statRows, 'Investment rates of individual auctions, with the auction date.', ['l', 'r', 'r', 'r', 'r'])}
 <p>The range of a term over a year is the most direct measure of how much a saver who rolls bills can expect the rate to move. On the 13-week bill the gap between the lowest and the highest auction of the period was ${K.pct((s13.hi[1] - s13.lo[1]) / 100, 3)}. On ${K.usd(100000)} kept in 13-week bills for a year, a shift of that size changes the interest by about ${K.usd(100000 * (s13.hi[1] - s13.lo[1]) / 100)} a year.</p>
 ${h.mini('tbill', { t: 'Cost and interest at the latest 13-week auction', p: ['face'], d: { tm: '13-Week', face: 50000 } })}

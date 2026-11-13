@@ -49,7 +49,7 @@ ${h.table(['Rate', 'Single, from', 'Joint, from'], stateRows, `Oregon personal i
 ${h.table(['Local tax', 'Single', 'Joint'], localRows, 'Portland-area income taxes on residents, 2026 thresholds (City of Portland Revenue Division). The arts tax, a flat amount per person, is left out.', ['l', 'l', 'l'])}
 <p>Added together, a Portland household above the last thresholds faces ${rp(peak)} of state and local tax on bank interest${peak > caTop ? `, more than the ${rp(caTop)} top rate of California` : ''}.</p>
 
-<h2>Salem against Portland</h2>
+<h2>Salem against Portland: the tax-equivalent yield</h2>
 <p>Take the single filer in Salem from the summary: ${rp(salem.s)} state, no local tax, a break-even CD rate of ${K.pct(salem.eq, 3)}. Now a married couple in Portland with ${K.usd(450000)} of joint taxable income. Oregon takes ${rp(pdx.s)}, the two local taxes ${rp(pdx.l)}, and the federal rate is ${K.pct(pdx.f, 0)}. Their CD must pay ${K.pct(pdx.eq, 3)}; without the local taxes it would be ${K.pct(pdxNo.eq, 3)}. On ${K.usd(10000)} at the bill yield the couple avoids ${K.usd2(pdx.saved)} a year.</p>
 ${h.mini('teq', { t: 'Portland local taxes and the Oregon break-even rate', p: ['pdx', 'inc'], d: { sx: SL, pdx: 'both', inc: 300000 } })}
 

@@ -45,7 +45,7 @@ export default defineGuide({
 ${h.table(['Taxable income', 'Single', 'Joint', 'Tax on $1,000, single'], rateRows, '2026 federal income tax brackets. Taxable income after deductions.', ['r', 'r', 'r', 'r'])}
 ${h.mini('bondtax', { t: 'Federal tax on your interest', p: ['int', 'inc'], d: { int: 12500, inc: 60000, st: 'joint' } })}
 
-<h2>Method 1 or method 2</h2>
+<h2>Method 1 or method 2 for savings bond interest</h2>
 <p>Publication 550 gives cash-method taxpayers, which means nearly all individuals, two options (${h.src('irs_p550', 'IRS Publication 550')}). Under method 1 you report the interest in the year the bond is cashed, disposed of or reaches final maturity, whichever comes first. Under method 2 you report the increase in value each year. Switching from method 1 to method 2 needs no permission, but in the year of change you report all interest accrued to date on all your bonds. Switching back needs the IRS's permission, which is granted automatically when you attach a statement headed "131" to your return for the year of change, with the details the publication lists, or when you file Form 3115.</p>
 <p>TreasuryDirect explains the same choice from the holder's side (${h.src('td_tax', 'TreasuryDirect, tax information')}): whichever method you use, the 1099-INT comes only at the end and shows all the interest the bond ever earned. If you reported it along the way, you subtract the part already taxed on Schedule B. Publication 550's own example is an EE bond bought for ${K.usd2(PX.price)} in ${K.month(PX.issued)} and cashed in ${K.month(PX.redeemed)} for ${K.usd2(PX.proceeds)}: the 1099-INT shows ${K.usd2(pubInt)}, but an owner who had reported yearly includes only the interest of the last months.</p>
 

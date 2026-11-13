@@ -40,7 +40,7 @@ ${h.table(['Rate', 'Single, from', 'Joint, head of household, from'], rows, `New
 <h2>Half a million: the step to ${rp(second[1])}</h2>
 <p>Between ${K.usd(sg[4][0])} and ${K.usd(second[0])} the rate is a steady ${rp(third[1])}. Above ${K.usd(second[0])} it climbs from ${rp(third[1])} to ${rp(second[1])} in a single step, which changes the comparison for households with large cash balances. On ${K.usd(10000)} at the current bill yield, that step alone is worth ${K.usd2(cliffSaved)} a year in tax that a Treasury avoids. Above ${K.usd(top[0])} the rate is ${rp(top[1])}${twins.length ? `, the same top rate as ${twins.map((n) => (n.startsWith('District') ? `the ${n}` : n)).join(' and ')}` : ''}.</p>
 
-<h2>A nurse in Trenton and a couple in Bergen County</h2>
+<h2>The T-bill tax equivalent for a nurse in Trenton and a couple in Bergen County</h2>
 <p>A single nurse with ${K.usd(70000)} of taxable income is in the ${rp(nurse.s)} bracket and the ${K.pct(nurse.f, 0)} federal one. A CD must pay ${K.pct(nurse.eq, 3)} to match the T-bill, and ${K.usd(10000)} in bills saves ${K.usd2(nurse.saved)} of state tax over a year. A married couple filing jointly at ${K.usd(650000)} pays ${rp(couple.s)} in New Jersey and ${K.pct(couple.f, 0)} federally; their break-even is ${K.pct(couple.eq, 3)}, and the same ${K.usd(10000)} saves ${K.usd2(couple.saved)}.</p>
 
 <h2>Savings bonds cashed in New Jersey</h2>

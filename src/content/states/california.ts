@@ -46,7 +46,7 @@ ${h.table(['Rate', 'Single, from', 'Married filing jointly, from'], rows, `Calif
 <h2>One million dollars and the Mental Health Services Tax</h2>
 <p>California adds ${rp(mhs)} on taxable income above ${K.usd(mhsAt)}, whatever the filing status. In the single schedule it creates the last row, ${rp(top[1])}. In the joint schedule it lands inside a bracket: the ${rp(jBelow[1])} rate becomes ${rp(jAt[1])} at ${K.usd(mhsAt)}. ${highest ? `With it, California has the highest top rate of the 50 states and the District of Columbia in our table.` : ''} For a household at that level, every ${K.usd(10000)} of T-bill interest instead of CD interest at ${K.pct(y, 3)} avoids ${K.usd2(10000 * y * top[1])} of state tax.</p>
 
-<h2>Two Californians, two answers</h2>
+<h2>Two Californians, two tax-equivalent yields</h2>
 <p>A single teacher in Fresno with ${K.usd(60000)} of taxable income sits in the ${rp(low.s)} bracket and the ${K.pct(low.f, 0)} federal one. Her CD would need ${K.pct(low.eq, 3)} to equal the T-bill. A single physician in San Diego at ${K.usd(520000)} pays ${rp(high.s)} to the state and ${K.pct(high.f, 0)} to Washington; his break-even CD rate is ${K.pct(high.eq, 3)}. The gap between the two equivalents is the whole story: the higher the bracket, the more a taxable yield must offer before it beats a Treasury.</p>
 ${h.mini('teq', { t: 'Break-even CD rate at a higher California income', p: ['inc'], d: { sx: SL, inc: 520000 } })}
 

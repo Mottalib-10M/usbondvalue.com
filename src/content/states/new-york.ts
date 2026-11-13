@@ -44,7 +44,7 @@ ${h.table(['City rate', 'Single, from', 'Married filing jointly, from'], cityRow
 <h2>Yonkers and the rest of the state</h2>
 <p>Yonkers residents pay a surcharge of ${rp(yonkers)} of their net state tax, so it shrinks with the state tax and Treasury interest escapes it as well. Anywhere else in the state, the calculator above applies the state schedule alone, which is what the upstate example below shows.</p>
 
-<h2>A Buffalo saver and a Brooklyn couple</h2>
+<h2>A Buffalo saver and a Brooklyn couple: the T-bill after tax</h2>
 <p>A single retiree in Buffalo with ${K.usd(90000)} of taxable income pays ${rp(upstate.s)} to the state and ${K.pct(upstate.f, 0)} federally. Her CD has to pay ${K.pct(upstate.eq, 3)} to match the bill, and ${K.usd(10000)} in T-bills saves her ${K.usd2(upstate.saved)} a year. A married couple in Brooklyn reporting ${K.usd(400000)} jointly faces ${rp(brooklyn.s)} from the state plus ${rp(brooklyn.c)} from the city. Their break-even CD rate is ${K.pct(brooklyn.eq, 3)}, and the same ${K.usd(10000)} saves ${K.usd2(brooklyn.saved)}. Switch the city answer off in the mini calculator to see how much of the advantage comes from living in the five boroughs.</p>
 ${h.mini('teq', { t: 'Upstate or in the city: New York break-even rate', p: ['nyc', 'inc'], d: { sx: SL, nyc: 'no', inc: 90000 } })}
 

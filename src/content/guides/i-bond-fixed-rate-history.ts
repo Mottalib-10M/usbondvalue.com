@@ -54,7 +54,7 @@ export default defineGuide({
 <p>Each row is one sales window. The fixed rate is the one printed in the Treasury's rate history workbook (${h.src('td_ibond_history', 'TreasuryDirect')}); the last column applies this month's inflation part to it with the Treasury's formula. When a window shows two rates, bonds issued in different months of that window have not yet reached the same rate period.</p>
 ${h.table(['Issue months', 'Fixed rate', `Composite in ${K.month(K.BUILD)}`], rows, 'Series I fixed rates by issue window, newest first. Composite = fixed + 2 × inflation + fixed × inflation (31 CFR 359). Bonds over 30 years old no longer earn interest.', ['l', 'r', 'r'])}
 
-<h2>What the numbers show</h2>
+<h2>What the fixed rate history shows</h2>
 <p>The first I bonds, in 1998, came with a fixed rate of ${K.pct(FT[0][1])}. The rate climbed to ${K.pct(max[1])} for ${label(FT.indexOf(max))}, then fell over the following decade. Stretches of zero fixed rates ran from ${runText}. Since ${K.month(FT[runs[runs.length - 1][1] + 1]?.[0] ?? cur[0])} the fixed rate has been positive in every window, ${K.pct(cur[1])} in the current one.</p>
 <p>A fixed rate is a real return: it is what the bond earns above inflation as measured by the CPI-U. A bond at ${K.pct(max[1])} doubles its purchasing power in roughly ${Math.round(Math.log(2) / Math.log(1 + max[1]))} years on top of keeping up with prices. A bond at zero only keeps up. Over the 30 years of a bond, that difference outweighs any single six-month inflation figure.</p>
 ${h.mini('rate', { t: 'Fixed and composite rate of your bond', p: ['im', 'iy'], d: { iy: 2007, im: 11 } })}

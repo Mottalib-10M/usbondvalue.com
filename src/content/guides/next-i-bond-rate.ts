@@ -52,7 +52,7 @@ export default defineGuide({
     { q: 'Should I buy I bonds in October or wait until November?', a: `It depends on the fixed rate, which nobody knows before ${ann}. A bond bought in October keeps the fixed rate of ${K.pct(cur.fixed)} for 30 years and earns the current composite for six months, then the new inflation part. A bond bought in November gets the new fixed rate and the new inflation part at once. The page shows both paths without telling you which to pick.` },
   ],
   body: (h) => `
-<h2>Two parts, one already known</h2>
+<h2>Two parts of the next rate, one already known</h2>
 <p>The composite rate of an I bond is the fixed rate plus twice the semiannual inflation rate plus the product of the two (${h.src('cfr_359', '31 CFR 359')}). The inflation rate comes straight from a price index. For the November announcement, the Treasury uses the CPI-U of March and of September of the same year, as published by the Bureau of Labor Statistics (${h.src('bls_cpi', 'BLS series CUUR0000SA0')}). The September figure came out on ${K.day(N.cpiSeptemberReleased)}, so the arithmetic can be done today: (${K.dec(N.cpiSeptember, 3)} − ${K.dec(N.cpiMarch, 3)}) ÷ ${K.dec(N.cpiMarch, 3)} = ${K.pct(nx.value)}${official ? ', the figure the Treasury announced' : ''}.</p>
 <p>The fixed rate is different. The Treasury sets it each May and November without publishing a formula, and it has ranged from ${K.pct(Math.min(...K.R.i.fixedTable.map((x) => x[1] as number)))} to ${K.pct(Math.max(...K.R.i.fixedTable.map((x) => x[1] as number)))} since 1998. ${official ? `For bonds bought from November 2026 to April 2027 it is ${K.pct(fixedNow)}.` : 'No estimate of it is a Treasury figure, and this page does not offer one.'}</p>
 

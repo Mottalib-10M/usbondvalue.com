@@ -52,7 +52,7 @@ ${h.mini('bond', { t: 'Value of the bond on the date of death', p: ['sr', 'iy', 
 <h2>Estate tax and the deduction</h2>
 <p>A savings bond is part of the deceased's estate for federal estate tax and for any state estate or inheritance tax (${h.src('td_tax', 'TreasuryDirect, tax information')}); the exemption from state tax covers income tax only. When federal estate tax was paid on the value of a bond, the heir who reports the interest earned before death can deduct the part of that estate tax attributable to it, as an itemized deduction, under the rules for income in respect of a decedent. Most estates owe no federal estate tax, and then there is nothing to deduct.</p>
 
-<h2>Practical steps</h2>
+<h2>Practical steps for inherited savings bonds</h2>
 <p>Find every bond first: paper bonds may be among the deceased's papers, and electronic ones are in a TreasuryDirect account. Check whether each one is still earning; a bond past 30 years has a fixed value and its interest was taxable for the year it matured. A named co-owner or beneficiary can usually cash the bond or have it reissued. Heirs who keep the bonds take over the same issue dates, so the 12-month lock and the three-month penalty before five years run from the original issue date. The ${h.a('cash-savings-bonds', 'cashing page')} explains the forms and the ${h.a('savings-bond-taxes', 'tax page')} the reporting methods.</p>`,
   tool: 'inherit',
   related: ['savings-bond-taxes', 'cash-savings-bonds', 'matured-savings-bonds', 'savings-bond-value'],

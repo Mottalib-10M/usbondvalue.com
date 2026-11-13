@@ -51,7 +51,7 @@ ${h.table(['Bond', `Value ${K.month(K.BUILD)}`, `Value ${K.month(NEXT)}`, 'Curre
 <h2>Special situations</h2>
 <p>The Treasury has separate procedures for bonds of someone who has died, bonds held in a trust, bonds of a person represented by an attorney-in-fact or a guardian, bonds of a young child, owners outside the United States and owners affected by a disaster (${h.src('td_cashing', 'TreasuryDirect')}). Bonds bought from someone else or on an auction site cannot be cashed: only an owner, a co-owner or a person with documents the Treasury accepts can redeem a bond. If you are unsure whether a paper bond was already cashed or replaced, a letter to Treasury Retail Securities Services with the serial numbers, without the bonds, gets an answer. The ${h.a('inherited-savings-bonds', 'inherited bonds page')} covers bonds of a deceased owner.</p>
 
-<h2>Tax when you cash</h2>
+<h2>Tax when you cash savings bonds</h2>
 <p>The interest is reported on your federal return for the year you cash, on the line for interest income, unless you chose to report it each year. It is exempt from state and local income tax (${h.src('usc_3124', '31 U.S.C. 3124')}). Bonds cashed to pay tuition may be partly or fully tax-free under the ${h.a('savings-bonds-for-education', 'education exclusion')}. Cashing a large amount in one year can push part of the interest into a higher bracket; spreading redemptions over several years, or cashing in a year of lower income, can lower the bill. The ${h.a('savings-bond-taxes', 'tax page')} has a calculator for the federal tax on a given amount of interest.</p>`,
   tool: 'bond',
   toolArg: { sr: 'EE', fm: 'paper', iy: 2000, im: 3, amt: 500 },
